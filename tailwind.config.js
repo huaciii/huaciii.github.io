@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./portfilo/html/homepage.html'],
+  content: ['./html/homepage.html'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-gradient': "url('./img/bg_gradient.png')",
+        'sign': "url('./img/sign_bk.png')",
+        'bg-gradient2': "url('./img/bg_gradient2.png')",
+      }
+    },
   },
   plugins: [],
 }
