@@ -1,15 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./html/homepage.html'],
+  content: ['./html/hp.html'],
   theme: {
     extend: {
       backgroundImage: {
-        'bg-gradient': "url('./img/bg_gradient.png')",
-        'sign': "url('./img/sign_bk.png')",
-        'bg-gradient2': "url('./img/bg_gradient2.png')",
+        'star-bk': "url('./img/star_bk.png')",
+        'star-wh': "url('./img/star_wh.png')",
+        'sign': "url('./img/sign.png')",
+        'star-bg': "url('./img/bg_star.png')",
+        'bg-icon': "url('./img/huaciii.png')",
+        'lineptn': "url('./img/line.png')",
+        'bg-gold': "url('./img/bg_gold.jpg')",
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
