@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shu-s</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="w-screen h-screen flex flex-col bg-bg-gold bg-cover">
+      <header class="w-full h-[10%] flex justify-between items-center  px-[8%]">
+        <div class="bg-sign w-[140px] h-[36px] bg-contain bg-no-repeat"></div>
+
+        <div
+          class="w-auto h-auto px-8 py-4 items-center rounded-full flex space-x-10 text-xs text-center"
+        >
+          <button onclick="backtoHome()"
+
+            
+            class="text-gray-800 hover:text-yellow-600 w-20 h-auto"
+            >HOME</button
+          >
+
+          <button onclick="redirecttoAbout()" class="text-gray-800 hover:text-yellow-600 w-20 h-auto"
+            >RESUME</
+          >
+        </div>
+      </header>
+      <div class="hidden w-full h-[2px] bg-lineptn bg-contain"></div>
+      <main class="flex w-full h-[80%] justify-end flex-col space-y-10 px-[8%]">
+        <!-- about me -->
+        <div class="flex flex-col space-y-4 w-1/2 h-auto">
+          <!-- icon -->
+          <div class="w-28 h-28 bg-bg-icon bg-cover"></div>
+          <!-- info -->
+          <div class="flex flex-col space-y-2">
+            <div>
+              <h2 class="font-semibold text-2xl font-serif">Asrun Shu</h2>
+              <div class="w-full h-auto">
+                <p class="text-sm">huaciii.a@gmail.com</p>
+              </div>
+            </div>
+
+            <!-- detail -->
+            <p class="break-words">
+              iscisciscisciscisciscisciscisciscisciscisciscisciscisciscisciscisciscisciscisccisciscisciscisciscisciscciscisciscisciscisciscisccisciscisciscisciscisciscciscisciscisciscisciscisc
+            </p>
+          </div>
+        </div>
+        <!-- line -->
+        <div class="hidden w-full h-1 bg-lineptn bg-contain"></div>
+        <!-- selected work -->
+        <div class="flex flex-col">
+          <!-- title -->
+          <!-- <h4 class="text-sm text-neutral-500">selected work</h4> -->
+          <!-- work card -->
+          <div class="w-full h-auto flex space-x-10">
+            <!-- 1 -->
+            <button
+            onclick="redirecttoBakery()"
+             class="relative flex flex-col  w-1/3 h-36 items-start justify-between group "
+           >
+           <div class="absolute -z-0 h-[1px] bottom-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
+             <!-- star -->
+             <div class="z-10 w-12 h-12 bg-star-bk bg-cover group-hover:rotate-45 group-hover:transition group-hover:duration-500 group-hover:bg-star-wh"></div>
+             <!-- text -->
+             <div class="z-10 w-full h-auto  flex flex-col items-start group-hover:text-white mb-4 ml-2">
+               <p class="text-sm text-neutral-500">#casestudy</p>
+               <div class="flex space-x-2 items-end">
+               <p class="text-2xl">Bakery Delivery app</p>
+               <span class="text-sm">↗</span></div>
+             </div>
+           </button>
+             <!-- 2 -->
+             <button
+             onclick="redirecttoBakery()"
+              class="relative flex flex-col  w-1/3 h-36 items-start justify-between group "
+            >
+            <div class="absolute -z-0 h-[1px] bottom-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
+              <!-- star -->
+              <div class="z-10 w-12 h-12 bg-star-bk bg-cover group-hover:rotate-45 group-hover:transition group-hover:duration-500 group-hover:bg-star-wh"></div>
+              <!-- text -->
+              <div class="z-10 w-full h-auto  flex flex-col items-start group-hover:text-white mb-4 ml-2">
+                <p class="text-sm text-neutral-500">#casestudy</p>
+                <div class="flex space-x-2 items-end">
+                <p class="text-2xl">Bakery Delivery app</p>
+                <span class="text-sm">↗</span></div>
+              </div>
+            </button>
+            <!-- 3 -->
+            <button
+            onclick="redirecttoBakery()"
+             class="relative flex flex-col  w-1/3 h-36 items-start justify-between group "
+           >
+           <div class="absolute -z-0 h-[1px] bottom-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
+             <!-- star -->
+             <div class="z-10 w-12 h-12 bg-star-bk bg-cover group-hover:rotate-45 group-hover:transition group-hover:duration-500 group-hover:bg-star-wh"></div>
+             <!-- text -->
+             <div class="z-10 w-full h-auto  flex flex-col items-start group-hover:text-white mb-4 ml-2">
+               <p class="text-sm text-neutral-500">#casestudy</p>
+               <div class="flex space-x-2 items-end">
+               <p class="text-2xl">Bakery Delivery app</p>
+               <span class="text-sm">↗</span></div>
+             </div>
+           </button>
+          </div>
+        </div>
+      </main>
+      <footer class=" w-full h-[10%] flex justify-center items-end pb-2 text-xs">
+       Be firm, and just, and true © Asrun Shu 2024
+      </footer>
+      <!-- Word -->
+
+      <!-- selected card -->
+    </section>
+  </body>
+ <script>
+  function redirecttoAbout() {
+    window.location.href = "./about.html";
+  }
+  function backtoHome() {
+      window.location.href = "./hp.html";
+    }
+
+    function redirecttoBakery() {
+      window.location.href = "./bakery.html";
+    }
+ </script>
+  
+</html>
