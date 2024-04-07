@@ -14,13 +14,14 @@
         <div
           class="w-auto h-auto px-8 py-4 items-center rounded-full flex space-x-10 text-xs text-center"
         >
-          <a
-            href="./hp.html"
-            class="text-gray-800 hover:text-blue-500 w-20 h-auto"
-            >HOME</a
+          <button onclick="backtoHome()"
+
+            
+            class="text-gray-800 hover:text-yellow-600 w-20 h-auto"
+            >HOME</button
           >
 
-          <button onclick="redirecttoAbout()" class="text-gray-800 hover:text-blue-500 w-20 h-auto"
+          <button onclick="redirecttoAbout()" class="text-gray-800 hover:text-yellow-600 w-20 h-auto"
             >RESUME</
           >
         </div>
@@ -51,53 +52,63 @@
         <!-- selected work -->
         <div class="flex flex-col">
           <!-- title -->
-          <h4 class="text-sm text-neutral-500">selected work</h4>
+          <!-- <h4 class="text-sm text-neutral-500">selected work</h4> -->
           <!-- work card -->
           <div class="w-full h-auto flex space-x-10">
             <!-- 1 -->
-            <a href="#"
-              class="relative flex flex-col  w-1/3 h-36 items-start justify-end group "
-            >
-            <div class="absolute -z-10 h-[1px] bottom-0-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[300ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
-              <!-- star -->
-              <div class="w-12 h-12 bg-star-bk bg-cover group-hover:bg-star-wh"></div>
-              <!-- text -->
-              <div class="w-full h-auto text-3xl group-hover:text-white mb-4 ml-2">
-                <p>Bakery Delivery app</p>
-              </div>
-            </a>
+            <button
+            onclick="redirecttoBakery()"
+             class="relative flex flex-col  w-1/3 h-36 items-start justify-between group "
+           >
+           <div class="absolute -z-0 h-[1px] bottom-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
+             <!-- star -->
+             <div class="z-10 w-12 h-12 bg-star-bk bg-cover group-hover:rotate-45 group-hover:transition group-hover:duration-500 group-hover:bg-star-wh"></div>
+             <!-- text -->
+             <div class="z-10 w-full h-auto  flex flex-col items-start group-hover:text-white mb-4 ml-2">
+               <p class="text-sm text-neutral-500">#casestudy</p>
+               <div class="flex space-x-2 items-end">
+               <p class="text-2xl">Bakery Delivery app</p>
+               <span class="text-sm">↗</span></div>
+             </div>
+           </button>
              <!-- 2 -->
-             <a
-             href="#"
+             <button
+             onclick="redirecttoBakery()"
               class="relative flex flex-col  w-1/3 h-36 items-start justify-between group "
             >
             <div class="absolute -z-0 h-[1px] bottom-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
               <!-- star -->
               <div class="z-10 w-12 h-12 bg-star-bk bg-cover group-hover:rotate-45 group-hover:transition group-hover:duration-500 group-hover:bg-star-wh"></div>
               <!-- text -->
-              <div class="z-10 w-full h-auto  flex flex-col group-hover:text-white mb-4 ml-2">
+              <div class="z-10 w-full h-auto  flex flex-col items-start group-hover:text-white mb-4 ml-2">
                 <p class="text-sm text-neutral-500">#casestudy</p>
                 <div class="flex space-x-2 items-end">
                 <p class="text-2xl">Bakery Delivery app</p>
                 <span class="text-sm">↗</span></div>
               </div>
-            </a>
+            </button>
             <!-- 3 -->
-            <a href="#"
-              class="relative flex flex-col  w-1/3 h-36 items-start justify-end group "
-            >
-            <div class="absolute -z-10 h-[1px] bottom-0-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
-              <!-- star -->
-              <div class="w-16 h-16 bg-star-bk bg-cover group-hover:bg-star-wh"></div>
-              <!-- text -->
-              <div class="w-full h-auto text-3xl group-hover:text-white mb-4 ml-2">
-                <p>Bakery Delivery app</p>
-              </div>
-            </a>
+            <button
+            onclick="redirecttoBakery()"
+             class="relative flex flex-col  w-1/3 h-36 items-start justify-between group "
+           >
+           <div class="absolute -z-0 h-[1px] bottom-0 w-full bg-black group-hover:h-36 group-hover:animate-flip-up group-hover:animate-duration-[500ms] group-hover:animate-ease-out group-hover:animate-normal"></div>
+             <!-- star -->
+             <div class="z-10 w-12 h-12 bg-star-bk bg-cover group-hover:rotate-45 group-hover:transition group-hover:duration-500 group-hover:bg-star-wh"></div>
+             <!-- text -->
+             <div class="z-10 w-full h-auto  flex flex-col items-start group-hover:text-white mb-4 ml-2">
+               <p class="text-sm text-neutral-500">#casestudy</p>
+               <div class="flex space-x-2 items-end">
+               <p class="text-2xl">Bakery Delivery app</p>
+               <span class="text-sm">↗</span></div>
+             </div>
+           </button>
           </div>
         </div>
       </main>
-      <footer class=" w-full h-[10%]"></footer>
+      <footer class=" w-full h-[10%] flex justify-center items-end pb-2 text-xs">
+       Be firm, and just, and true © Asrun Shu 2024
+      </footer>
       <!-- Word -->
 
       <!-- selected card -->
@@ -107,5 +118,13 @@
   function redirecttoAbout() {
     window.location.href = "./about.html";
   }
+  function backtoHome() {
+      window.location.href = "./hp.html";
+    }
+
+    function redirecttoBakery() {
+      window.location.href = "./bakery.html";
+    }
  </script>
+  
 </html>
