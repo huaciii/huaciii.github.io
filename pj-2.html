@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shu-s-about</title>
+    <link href="../style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="w-screen h-screen flex flex-col bg-bg-gold bg-cover">
+      <header class="w-full h-[10%] flex justify-between items-center  px-[8%]">
+        <div class="bg-sign w-[140px] h-[36px] bg-contain bg-no-repeat"></div>
+
+        <div
+          class="w-auto h-auto px-8 py-4 items-center rounded-full flex space-x-10 text-xs text-center"
+        >
+          <button onclick="backtoHome()"
+
+            
+            class="text-gray-800 hover:text-yellow-600 w-20 h-auto"
+            >HOME</button
+          >
+
+          <button onclick="redirecttoAbout()" class="text-gray-800 hover:text-yellow-600 w-20 h-auto"
+            >RESUME</
+          >
+        </div>
+      </header>
+      bakery
+    </section>
+  </body>
+  <script>
+    function redirecttoAbout() {
+      window.location.href = "./about.html";
+    }
+   </script>
+    <script>
+      function backtoHome() {
+        window.location.href = "./hp.html";
+      }
+     </script>
+</html>

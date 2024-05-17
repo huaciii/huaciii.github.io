@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shu-s-pj1</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-base-bgdark w-screen h-auto">
+    <header
+      class="w-screen px-[4%] py-12 h-auto flex justify-start items-center"
+    >
+      <button onclick="backtoHome()" class="w-auto h-auto">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="28"
+          fill="none"
+          viewBox="0 0 34 28"
+        >
+          <path
+            fill="#D8D8D8"
+            d="M29.405 0a14.588 14.588 0 0 1 1.964 7.334c0 8.074-6.523 14.619-14.569 14.619-8.047 0-14.57-6.545-14.57-14.619 0-2.673.716-5.178 1.965-7.334A16.825 16.825 0 0 0 0 11.144C0 20.454 7.522 28 16.8 28s16.8-7.547 16.8-16.856A16.82 16.82 0 0 0 29.405 0Z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <section
+      class="w-full px-[4%] flex flex-col space-y-8 items-start text-white h-screen"
+    >
+      <!-- heroimg -->
+      <div class="w-full h-[80%] bg-white"></div>
+      <!-- title -->
+      <h1 class="text-4xl">Redesigning a Telecommunication Service Platform</h1>
+      <!-- tag -->
+      <div class="flex justify-between w-full h-28">
+        <!-- tag1 -->
+        <div
+          class="rounded-2xl px-8 pt-8 space-y-1 border-base-bglight border-[1px] flex flex-col w-[32%] h-full"
+        >
+          <p class="font-subt text-base-fontdark text-sm">ROLE</p>
+          <p class="text-base-fontlight">UI Designer</p>
+        </div>
+        <!-- tag2 -->
+        <div
+          class="rounded-2xl px-8 pt-8 space-y-1 border-base-bglight border-[1px] flex flex-col w-[32%] h-full"
+        >
+          <p class="font-subt text-base-fontdark text-sm">ROLE</p>
+          <p class="text-base-fontlight">UI Designer</p>
+        </div>
+        <!-- tag3 -->
+        <div
+          class="rounded-2xl px-8 pt-8 space-y-1 border-base-bglight border-[1px] flex flex-col w-[32%] h-full"
+        >
+          <p class="font-subt text-base-fontdark text-sm">ROLE</p>
+          <p class="text-base-fontlight">UI Designer</p>
+        </div>
+      </div>
+    </section>
+    <!-- portとは -->
+    <section class="h-screen w-full px-[4%]">
+      <div
+        class="bg-base-bglight rounded-2xl w-full h-[50%] mt-8 flex justify-center items-center"
+      >
+        <div class="flex flex-col space-y-4 h-auto w-[40%]">
+          <p class="font-subt text-sm text-base-fontdark">Introduction</p>
+          <p class="text-base-fontlight">
+            Portは、アプリなしでブラウザから簡単にオンライン課金通話するプラットフォームです。<br />
+            カウンセリング、占い、コンサル、
+            外国語会話、暇つぶしの話し相手など、様々な用途に対応しています。
+          </p>
+        </div>
+      </div>
+      <!-- why redesign -->
+      <div class="flex h-[50%] w-full justify-between">
+        <!-- title -->
+        <div class="flex pl-20 items-center w-1/2 h-full">
+          <p class="font-subt text-xl text-base-fontdark">
+            w h y &nbsp;&nbsp;&nbsp; R e d e s i g n i n g ?
+          </p>
+        </div>
+        <div class="flex items-center w-1/2 h-full justify-center">
+          <ul class="list-disc text-base-fontlight h-auto w-auto space-y-10">
+            <li>ビジュアルが古い</li>
+            <li>ビジュアルが古い</li>
+            <li>ビジュアルが古い</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function redirecttoAbout() {
+      window.location.href = "./resume.html";
+    }
+  </script>
+  <script>
+    function backtoHome() {
+      window.location.href = "./index.html";
+    }
+  </script>
+</html>
