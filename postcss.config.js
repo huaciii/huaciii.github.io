@@ -3,5 +3,6 @@ module.exports = {
     require('tailwindcss'),
     require('@tailwindcss/deprecation-warnings'),
     require('autoprefixer'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 };

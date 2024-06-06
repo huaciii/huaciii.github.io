@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shu-s-pj1</title>
     <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
   </head>
   <body class="bg-base-bgdark w-screen h-auto">
     <header
-      class="w-screen px-[4%] py-12 h-auto flex justify-start items-center"
+      class="w-screen px-[4%] py-8 h-auto flex justify-start items-center"
     >
       <button onclick="backtoHome()" class="w-auto h-auto">
         <svg
@@ -27,43 +28,47 @@
     </header>
 
     <section
-      class="w-full px-[4%] flex flex-col space-y-8 items-start text-white h-screen"
+      class="w-full px-[4%] flex flex-col space-y-10 items-start text-white h-screen"
     >
       <!-- heroimg -->
-      <div class="w-full h-[80%] bg-white"></div>
+      <div class="w-full h-[80%]">
+        <div class="bg-macmockup bg-cover w-full h-full rounded-2xl"></div>
+      </div>
       <!-- title -->
       <h1 class="text-4xl">Redesigning a Telecommunication Service Platform</h1>
       <!-- tag -->
       <div class="flex justify-between w-full h-28">
         <!-- tag1 -->
         <div
-          class="rounded-2xl px-8 pt-8 space-y-1 border-base-bglight border-[1px] flex flex-col w-[32%] h-full"
+          class="rounded-2xl px-8 pt-8 space-y-1 border-base-brd border-[1px] flex flex-col w-[32%] h-full"
         >
           <p class="font-subt text-base-fontdark text-sm">ROLE</p>
-          <p class="text-base-fontlight">UI Designer</p>
+          <p class="text-base-fontlight">UIUX Designer</p>
         </div>
         <!-- tag2 -->
         <div
-          class="rounded-2xl px-8 pt-8 space-y-1 border-base-bglight border-[1px] flex flex-col w-[32%] h-full"
+          class="rounded-2xl px-8 pt-8 space-y-1 border-base-brd border-[1px] flex flex-col w-[32%] h-full"
         >
           <p class="font-subt text-base-fontdark text-sm">ROLE</p>
           <p class="text-base-fontlight">UI Designer</p>
         </div>
         <!-- tag3 -->
         <div
-          class="rounded-2xl px-8 pt-8 space-y-1 border-base-bglight border-[1px] flex flex-col w-[32%] h-full"
+          class="rounded-2xl px-8 pt-8 space-y-1 border-base-brd border-[1px] flex flex-col w-[32%] h-full"
         >
-          <p class="font-subt text-base-fontdark text-sm">ROLE</p>
-          <p class="text-base-fontlight">UI Designer</p>
+          <p class="font-subt text-base-fontdark text-sm">TOOL</p>
+          <p class="text-base-fontlight">Figma・Photoshop</p>
         </div>
       </div>
     </section>
     <!-- portとは -->
-    <section class="h-screen w-full px-[4%]">
+    <section class="h-auto w-full px-[4%]">
       <div
-        class="bg-base-bglight rounded-2xl w-full h-[50%] mt-8 flex justify-center items-center"
+        class="pt-40 pb-48 rounded-2xl w-full h-auto mt-10 flex justify-center items-center"
       >
-        <div class="flex flex-col space-y-4 h-auto w-[40%]">
+        <div
+          class="flex flex-col space-y-4 h-auto w-[40%] leading-6 tracking-wide"
+        >
           <p class="font-subt text-sm text-base-fontdark">Introduction</p>
           <p class="text-base-fontlight">
             Portは、アプリなしでブラウザから簡単にオンライン課金通話するプラットフォームです。<br />
@@ -72,24 +77,279 @@
           </p>
         </div>
       </div>
-      <!-- why redesign -->
-      <div class="flex h-[50%] w-full justify-between">
-        <!-- title -->
-        <div class="flex pl-20 items-center w-1/2 h-full">
-          <p class="font-subt text-xl text-base-fontdark">
-            w h y &nbsp;&nbsp;&nbsp; R e d e s i g n i n g ?
-          </p>
+      <!-- key feature -->
+      <div class="w-full flex justify-between h-auto mt-10 text-sm">
+        <!-- b -->
+        <div
+          class="h-auto w-[48%] -bg-base-bgme border-base-brd border-[1px] rounded-2xl px-8 pt-8 pb-20 flex flex-col space-y-36"
+        >
+          <!-- title -->
+          <div class="flex items-center justify-between w-full space-x-4">
+            <p class="font-subt text-base-fontdark">Key&nbsp; &nbsp;feature</p>
+            <div
+              class="w-auto h-auto px-4 py-1 rounded-3xl bg-primary-700 text-base-fontlight"
+            >
+              Business
+            </div>
+          </div>
+          <div>
+            <ul
+              class="list-disc text-base-fontlight h-auto w-auto space-y-8 pl-4 list-outside tracking-wide"
+            >
+              <li>必要な情報を入力すると、自分のHPを生成することができます</li>
+              <li>
+                リアルタイムの音声およびビデオ通話を行い、複数のサービスを提供することができます
+              </li>
+              <li>自由にサービス料金と受付時間を設定することができます</li>
+              <li>
+                管理画面では、評価やアクセス分析などを確認し、顧客管理をスムーズに行えます
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="flex items-center w-1/2 h-full justify-center">
-          <ul class="list-disc text-base-fontlight h-auto w-auto space-y-10">
-            <li>ビジュアルが古い</li>
-            <li>ビジュアルが古い</li>
-            <li>ビジュアルが古い</li>
-          </ul>
+        <!-- c -->
+        <div
+          class="h-auto w-[48%] border-base-brd border-[1px] rounded-2xl px-8 pt-8 pb-20 flex flex-col space-y-36"
+        >
+          <!-- title -->
+          <div class="flex items-center justify-between w-full space-x-4">
+            <p class="font-subt text-base-fontdark">Key&nbsp; &nbsp;feature</p>
+            <div
+              class="w-auto h-auto px-4 py-1 rounded-3xl bg-primary-700 text-base-fontlight"
+            >
+              Custom
+            </div>
+          </div>
+          <div>
+            <ul
+              class="list-disc text-base-fontlight h-auto w-auto space-y-8 pl-4 list-outside tracking-wide"
+            >
+              <li>
+                アプリなしで、ブラウザから簡単に電話をかけることができます
+              </li>
+              <li>
+                プラットフォームを通じてカウンセリング、占い、言語学習などさまざまなサービスを閲覧できます
+              </li>
+              <li>
+                サービス提供者のリアルタイムの状態を確認し、通話中である場合でも予約やメッセージの送信が可能です
+              </li>
+              <li>通話中でもポイントをチャージすることができます</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+    <!-- mockup -->
+    <!-- <section class="h-auto w-full mt-8 px-[4%]">
+      <div class="bg-base-bglight rounded-2xl h-80">
+        <div class="w-full h-full bg-smmockup bg-cover rounded-2xl"></div>
+      </div>
+    </section> -->
+    <!-- challenge&solution&gif -->
+    <section class="h-auto w-full px-[4%] text-sm tracking-wide">
+      <div class="w-full h-auto mt-8 flex">
+        <!-- challenge -->
+        <div class="flex justify-between w-full h-auto">
+          <!-- challenge1 -->
+          <div
+            class="rounded-2xl px-8 py-8 justify-between bg-base-bgme flex flex-col w-[32%] h-48"
+          >
+            <span class="font-subt text-base-fontdark text-sm w-auto h-auto"
+              >CHALLENGE 01</span
+            >
+            <span class="text-white w-auto h-auto"
+              >パソコンやスマホに不慣れなユーザーが多いため、分かりやすい情報アーキテクチャが必要</span
+            >
+          </div>
+          <!-- challenge2 -->
+          <div
+            class="rounded-2xl px-8 py-8 justify-between bg-base-bgme flex flex-col w-[32%] h-48"
+          >
+            <span class="font-subt text-base-fontdark text-sm w-auto h-auto"
+              >CHALLENGE 02</span
+            >
+            <span class="text-white w-auto h-auto"
+              >レスポンシブデザインにおいてデザイン崩れを防ぐためのコンテンツやステータスの配置</span
+            >
+          </div>
+          <!-- challenge3 -->
+          <div
+            class="rounded-2xl px-8 py-8 justify-between bg-base-bgme flex flex-col w-[32%] h-48"
+          >
+            <span class="font-subt text-base-fontdark text-sm w-auto h-auto"
+              >CHALLENGE 03</span
+            >
+            <span class="text-white w-auto h-auto"
+              >新規登録率を向上させるためのデザインや文言のリデザイン</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- solution -->
+      <div class="flex flex-col h-auto w-full mt-8">
+        <!-- title -->
+        <div
+          class="border-base-brd border-[1px] rounded-2xl w-full h-96 flex px-8 pt-8 pb-16 text-white tracking-wide bg-sm3mockup bg-80% bg-no-repeat bg-right"
+        >
+          <div class="flex flex-col -space-y-4 h-full justify-between w-full">
+            <p class="font-subt text-sm">Solution</p>
+            <p class="text-5xl">Grid &nbsp;Design</p>
+          </div>
+        </div>
+        <div
+          class="h-auto w-full mt-40 rounded-2xl flex justify-center items-center text-base-fontlight"
+        >
+          <div
+            class="w-1/3 h-auto text-justify text-sm leading-6 tracking-wide"
+          >
+            <p>
+              ニーズに合わせて<span class="text-white font-semibold"
+                >グリッドデザイン</span
+              >でリニューアルしました。<br /><br />
+              同じ種類の情報を一つのグリッドにまとめることで、
+              <span class="text-white font-semibold">情報の可読性</span>
+              が大幅に向上させることができます。
+              <span class="text-white font-semibold">レスポンシブデザイン</span
+              >に適しており、さまざまなデバイスサイズに対応するレイアウトを簡単に作成できます。
+              <br />
+              また、<span class="text-white font-semibold">ページの拡張性</span>
+              も向上します。コンテンツやセクションの削除と追加する際にも、一貫したレイアウトを維持することができます。
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- gif -->
+      <div class="flex justify-between h-screen items-center w-full mt-8">
+        <div
+          class="bg-base-bgme rounded-2xl w-[32%] h-[70%] flex justify-center items-center relative"
+        >
+          <div class="bg-allsm bg-contain w-[57%] h-[84%] bg-no-repeat"></div>
+          <div
+            class="absolute px-4 py-2 w-auto h-auto bg-base-bgdark rounded-xl right-2 top-2 text-sm text-base-fontdark"
+          >
+            home(sp)
+          </div>
+        </div>
+        <div
+          class="bg-base-bgme rounded-2xl w-[66%] relative h-[70%] flex justify-center items-center"
+        >
+          <div class="bg-allpc bg-contain w-[90%] h-[84%] bg-no-repeat"></div>
+          <div
+            class="absolute px-4 py-2 w-auto h-auto bg-base-bgdark rounded-xl right-2 top-2 text-sm text-base-fontdark"
+          >
+            home(pc)
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- readable -->
+
+    <div class="grid grid-cols-9 px-[4%] mt-20">
+      <aside class="self-start sticky top-16 col-span-2">
+        <div
+          class="w-full h-auto text-justify text-sm leading-6 tracking-wide flex flex-col items-start justify-center space-y-8"
+        >
+          <div class="flex-col">
+            <p class="font-subt text-base-fontdark">before & after</p>
+            <p class="text-white font-semibold">The New home screen look</p>
+          </div>
+
+          <p class="text-white">
+            古いバージョンよりクリーンなビジュアルスタイルを採用しました。<br />
+            情報の配置を調整することにより、ユーザーエクスペリエンスが大幅に向上し、プラットフォーム全体の魅力が増しました。
+          </p>
+        </div>
+      </aside>
+      <!-- before&after -->
+      <main class="col-span-7  ml-16">
+        <!-- header -->
+        <div class="w-full h-screen flex flex-col space-y-8">
+          <!-- title#header -->
+          <div class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-white text-base-fontlight">#header</div>
+          <div class="w-full h-96 flex justify-between">
+            <!-- before -->
+            <div
+              class="rounded-2xl px-8 py-6 bg-base-bgme flex flex-col h-full w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-base-fontdark">before</p>
+                <p class="text-base-fontlight">
+                  既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full h-40 bg-white"></div>
+            </div>
+            <!-- after -->
+            <div
+              class="rounded-2xl px-8 py-6 bg-base-bgme border-primary-300 border-[1px] flex flex-col h-full w-[48%]"
+            >
+              <p class="font-subt text-primary-300">after</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="w-full h-screen flex flex-col space-y-8">
+          <!-- title#header -->
+          <div class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-white text-base-fontlight">#content</div>
+          <div class="w-full h-96 flex justify-between">
+            <!-- before -->
+            <div
+              class="rounded-2xl px-8 py-6 bg-base-bgme flex flex-col h-full w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-base-fontdark">before</p>
+                <p class="text-base-fontlight">
+                  既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full h-40 bg-white"></div>
+            </div>
+            <!-- after -->
+            <div
+              class="rounded-2xl px-8 py-6 bg-base-bgme border-primary-300 border-[1px] flex flex-col h-full w-[48%]"
+            >
+              <p class="font-subt text-primary-300">after</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- status -->
+        <div class="w-full h-screen flex flex-col space-y-8">
+          <!-- title#header -->
+          <div class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-white text-base-fontlight">#status</div>
+          <div class="w-full h-96 flex justify-between">
+            <!-- before -->
+            <div
+              class="rounded-2xl px-8 py-6 bg-base-bgme flex flex-col h-full w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-base-fontdark">before</p>
+                <p class="text-base-fontlight">
+                  既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは
+                </p>
+              </div>
+              <!-- img -->
+              <div class="w-full h-40 bg-white"></div>
+            </div>
+            <!-- after -->
+            <div
+              class="rounded-2xl px-8 py-6 bg-base-bgme border-primary-300 border-[1px] flex flex-col h-full w-[48%]"
+            >
+              <p class="font-subt text-primary-300">after</p>
+            </div>
+          </div>
+        </div>
+        
+      </main>
+    </div>
   </body>
+
   <script>
     function redirecttoAbout() {
       window.location.href = "./resume.html";

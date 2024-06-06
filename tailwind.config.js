@@ -12,16 +12,26 @@ module.exports = {
         'lineptn': "url('./img/line.png')",
         'bg-gold': "url('./img/bg_gold.jpg')",
         'bg-bk': "url('./img/bg_bk.png')",
-        'mockup': "url('./img/mockup.png')",
+        'heromockup': "url('./img/mockup.png')",
+        'macmockup': "url('./img/macmockup.png')",
+        'allsm': "url('./img/allsm.gif')",
+        'allpc': "url('./img/allpc.gif')",
+        'smmockup': "url('./img/sm.png')",
+        'sm3mockup': "url('./img/sm3.png')",
+      },
+      backgroundSize: {
+        '80%': '80%',
       },
       colors: {
         'base': {
           DEFAULT: '#222222',
           fontdark: '#737272',
           fontlight: '#BCBCBC',
-          bglight: '#202020',
+          bglight: '#cacaca',
+          bgme: '#202020',
           bgdark: '#171717',
           btn: '#5C5C5C',
+          brd: '#2b2b2b',
         },
         'primary': {
           100: '#D9C0C0',
@@ -39,7 +49,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    
   ],
 }
 
