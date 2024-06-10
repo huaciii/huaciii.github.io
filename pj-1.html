@@ -242,9 +242,8 @@
         </div>
       </div>
     </section>
-    <!-- readable -->
-
-    <div class="grid grid-cols-9 px-[4%] mt-20">
+    <!-- the new home screen -->
+    <div class="grid grid-cols-9 px-[4%] mt-20 pb-48">
       <aside class="self-start sticky top-16 col-span-2">
         <div
           class="w-full h-auto text-justify text-sm leading-6 tracking-wide flex flex-col items-start justify-center space-y-8"
@@ -261,91 +260,381 @@
         </div>
       </aside>
       <!-- before&after -->
-      <main class="col-span-7  ml-16">
+      <main class="col-span-7 ml-16">
         <!-- header -->
-        <div class="w-full h-screen flex flex-col space-y-8">
+        <div class="w-full h-auto flex flex-col space-y-8 pb-48">
           <!-- title#header -->
-          <div class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-white text-base-fontlight">#header</div>
-          <div class="w-full h-96 flex justify-between">
+          <div
+            class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+          >
+            #header
+          </div>
+          <div class="w-full h-auto flex justify-between">
             <!-- before -->
             <div
-              class="rounded-2xl px-8 py-6 bg-base-bgme flex flex-col h-full w-[48%] space-y-6"
+              class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
             >
               <!-- text -->
               <div class="flex flex-col w-full text-justify space-y-8">
                 <p class="font-subt text-base-fontdark">before</p>
-                <p class="text-base-fontlight">
-                  既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは
+                <p class="text-base-fontlight text-sm">
+                  画面比率が大きすぎてメインコンテンツが狭かった。<br />
+                  分区が不明確でログインしていない時もメッセージなどのユーザー操作メニューが表示されて混乱。
                 </p>
               </div>
               <!-- img -->
-              <div class="w-full h-40 bg-white"></div>
+              <div
+                class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+              >
+                <img src="./img/be_header.png" alt="" class="w-full h-auto" />
+              </div>
             </div>
             <!-- after -->
             <div
-              class="rounded-2xl px-8 py-6 bg-base-bgme border-primary-300 border-[1px] flex flex-col h-full w-[48%]"
+              class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-6"
             >
-              <p class="font-subt text-primary-300">after</p>
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-primary-300">after</p>
+                <p class="text-white text-sm">
+                  statusに応じてログイン/未ログイン時の状態が切り替わり、Cユーザーの操作区域を統一し、プラットフォーム関連情報はフッターに移動させる。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+              >
+                <img src="./img/af_header.png" alt="" class="w-full h-auto" />
+              </div>
             </div>
           </div>
         </div>
 
         <!-- content -->
-        <div class="w-full h-screen flex flex-col space-y-8">
+        <div class="w-full h-auto flex flex-col space-y-8 pb-48">
           <!-- title#header -->
-          <div class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-white text-base-fontlight">#content</div>
-          <div class="w-full h-96 flex justify-between">
+          <div
+            class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+          >
+            #contents
+          </div>
+          <div class="w-full h-auto flex justify-between">
             <!-- before -->
             <div
-              class="rounded-2xl px-8 py-6 bg-base-bgme flex flex-col h-full w-[48%] space-y-6"
+              class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
             >
               <!-- text -->
               <div class="flex flex-col w-full text-justify space-y-8">
                 <p class="font-subt text-base-fontdark">before</p>
-                <p class="text-base-fontlight">
-                  既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは
+                <p class="text-base-fontlight text-sm">
+                  情報の優先順位が逆で、大きな余白がユーザーに混乱させて何の機能かわかりにくい。
                 </p>
               </div>
               <!-- img -->
-              <div class="w-full h-40 bg-white"></div>
+              <div
+                class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+              >
+                <img src="./img/be_content.png" alt="" class="w-full h-auto" />
+              </div>
             </div>
             <!-- after -->
             <div
-              class="rounded-2xl px-8 py-6 bg-base-bgme border-primary-300 border-[1px] flex flex-col h-full w-[48%]"
+              class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-6"
             >
-              <p class="font-subt text-primary-300">after</p>
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-primary-300">after</p>
+                <p class="text-white text-sm">
+                  レイアウトを改善し、情報をより分かりやすくした同時に、購入ボタンを追加した。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+              >
+                <img src="./img/af_content.png" alt="" class="w-full h-auto" />
+              </div>
             </div>
           </div>
         </div>
 
         <!-- status -->
-        <div class="w-full h-screen flex flex-col space-y-8">
+        <div class="w-full h-auto flex flex-col space-y-8">
           <!-- title#header -->
-          <div class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-white text-base-fontlight">#status</div>
-          <div class="w-full h-96 flex justify-between">
+          <div
+            class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+          >
+            #status
+          </div>
+          <div class="w-full h-auto flex justify-between">
             <!-- before -->
             <div
-              class="rounded-2xl px-8 py-6 bg-base-bgme flex flex-col h-full w-[48%] space-y-6"
+              class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
             >
               <!-- text -->
               <div class="flex flex-col w-full text-justify space-y-8">
                 <p class="font-subt text-base-fontdark">before</p>
-                <p class="text-base-fontlight">
-                  既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは既存のヘッダーは
+                <p class="text-base-fontlight text-sm">
+                  サービス提供者の状態がわかりにくい。
                 </p>
               </div>
               <!-- img -->
-              <div class="w-full h-40 bg-white"></div>
+              <div
+                class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+              >
+                <img src="./img/be_status.png" alt="" class="w-full h-auto" />
+              </div>
             </div>
             <!-- after -->
             <div
-              class="rounded-2xl px-8 py-6 bg-base-bgme border-primary-300 border-[1px] flex flex-col h-full w-[48%]"
+              class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-6"
             >
-              <p class="font-subt text-primary-300">after</p>
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-primary-300">after</p>
+                <p class="text-white text-sm">
+                  状態タグ欄を追加し、編集がしやすくなるとともに、下部の操作バーとの連携も強化させた。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+              >
+                <img src="./img/af_status.png" alt="" class="w-full h-auto" />
+              </div>
             </div>
           </div>
         </div>
-        
+      </main>
+    </div>
+    <!-- the new B dashboard -->
+    <div class="grid grid-cols-9 px-[4%] mt-20">
+      <aside class="self-start sticky top-16 col-span-2">
+        <div
+          class="w-full h-auto text-justify text-sm leading-6 tracking-wide flex flex-col items-start justify-center space-y-8"
+        >
+          <div class="flex-col">
+            <p class="font-subt text-base-fontdark">before & after</p>
+            <p class="text-white font-semibold">Redesign of B-user dashboard</p>
+          </div>
+
+          <p class="text-white">
+            古いバージョンの管理画面には設定分類の混乱や説明文字の冗長さなど多くの問題があり、これらがB端ユーザーに混乱を招いている。
+          </p>
+        </div>
+      </aside>
+      <!-- before&after -->
+      <main class="col-span-7 ml-16">
+        <!-- homepage -->
+        <div class="w-full h-auto flex flex-col space-y-8 pb-48">
+          <!-- title#header -->
+          <div
+            class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+          >
+            #homepage
+          </div>
+          <div class="w-full h-auto flex justify-between">
+            <!-- before -->
+            <div
+              class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-base-fontdark">before</p>
+                <p class="text-base-fontlight text-sm">
+                  メニューと内容が同じ画面にあるため、スペースの利用効率が非常に低くなっている。<br />そのため、
+                  「必須項目」をすべて確認するには一番下までスクロールする必要があり、Bユーザーには不便である。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+              >
+                <img
+                  src="./img/be_dash_home.png"
+                  alt=""
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <!-- after -->
+            <div
+              class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-primary-300">after</p>
+                <p class="text-white text-sm">
+                  新規ユーザーに優しくなるため、メニューの構造をリデザインした。
+                  <br />「未完成」項目は一目瞭然以外、画面の下部に「アプリをダウンロードする」トーストバーを追加した。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+              >
+                <img
+                  src="./img/af_dash_home.png"
+                  alt=""
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- setting menu -->
+        <div class="w-full h-auto flex flex-col space-y-8 pb-48">
+          <!-- title#header -->
+          <div
+            class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+          >
+            #settings
+          </div>
+          <div class="w-full h-auto flex justify-between">
+            <!-- before -->
+            <div
+              class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-base-fontdark">before</p>
+                <p class="text-base-fontlight text-sm">
+                  サイドバーのような仕込みで操作には違和感がある上、全てのコンテンツを見ることができない。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+              >
+                <img
+                  src="./img/be_dash_menu.png"
+                  alt=""
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <!-- after -->
+            <div
+              class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-6"
+            >
+              <!-- text -->
+              <div class="flex flex-col w-full text-justify space-y-8">
+                <p class="font-subt text-primary-300">after</p>
+                <p class="text-white text-sm">
+                  構造はページングに替えた。<br />階層的に見やすくなり、ユーザーの操作困難を招くこともなくなる。
+                </p>
+              </div>
+              <!-- img -->
+              <div
+                class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+              >
+                <img
+                  src="./img/af_dash_menu.png"
+                  alt=""
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  detailed settings -->
+        <div class="w-full h-auto flex flex-col space-y-16 pb-48">
+          <!-- title -->
+          <div
+            class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+          >
+            # detailed settings
+          </div>
+          <div class="w-full h-auto text-white">
+            階層的な設計を意識しながら、視覚化を強化してユーザー体験を向上させた。ここでは一部の例を示す。
+          </div>
+          <!-- 通話料 -->
+          <div class="w-full h-auto flex flex-col space-y-2">
+            <p class="text-base-fontlight">・通話料設定</p>
+            <div class="w-full h-auto flex justify-between">
+              <!-- before -->
+              <div
+                class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-4"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-base-fontdark">before</p>
+                  <!-- <p class="text-base-fontlight text-sm">
+                  サービス提供者の状態がわかりにくい。
+                </p> -->
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+                >
+                  <img src="./img/be_dash_call.png" alt="" class="w-full h-auto" />
+                </div>
+              </div>
+              <!-- after -->
+              <div
+                class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-4"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-primary-300">after</p>
+                  <!-- <p class="text-white text-sm">
+                  状態タグ欄を追加し、編集がしやすくなるとともに、下部の操作バーとの連携も強化させた。
+                </p> -->
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+                >
+                  <img src="./img/af_dash_call.png" alt="" class="w-full h-auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カメラ -->
+          <div class="w-full h-auto flex flex-col space-y-2">
+            <p class="text-base-fontlight">・カメラ設定</p>
+            <div class="w-full h-auto flex justify-between">
+              <!-- before -->
+              <div
+                class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-4"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-base-fontdark">before</p>
+                  <!-- <p class="text-base-fontlight text-sm">
+                  サービス提供者の状態がわかりにくい。
+                </p> -->
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+                >
+                  <img src="./img/be_dash_camera.png" alt="" class="w-full h-auto" />
+                </div>
+              </div>
+              <!-- after -->
+              <div
+                class="rounded-2xl px-8 py-6 border-primary-300 border-[1px] flex flex-col h-auto w-[48%] space-y-4"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-primary-300">after</p>
+                  <!-- <p class="text-white text-sm">
+                  状態タグ欄を追加し、編集がしやすくなるとともに、下部の操作バーとの連携も強化させた。
+                </p> -->
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+                >
+                  <img src="./img/af_dash_camera.png" alt="" class="w-full h-auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
