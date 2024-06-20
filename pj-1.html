@@ -408,7 +408,7 @@
       </main>
     </div>
     <!-- the new B dashboard -->
-    <div class="grid grid-cols-9 px-[4%] mt-20">
+    <div class="grid grid-cols-9 px-[4%] mt-20 pb-64">
       <aside class="self-start sticky top-16 col-span-2">
         <div
           class="w-full h-auto text-justify text-sm leading-6 tracking-wide flex flex-col items-start justify-center space-y-8"
@@ -540,7 +540,7 @@
         </div>
 
         <!--  detailed settings -->
-        <div class="w-full h-auto flex flex-col space-y-16 pb-48">
+        <div class="w-full h-auto flex flex-col space-y-16">
           <!-- title -->
           <div
             class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
@@ -569,7 +569,11 @@
                 <div
                   class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
                 >
-                  <img src="./img/be_dash_call.png" alt="" class="w-full h-auto" />
+                  <img
+                    src="./img/be_dash_call.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
                 </div>
               </div>
               <!-- after -->
@@ -587,7 +591,11 @@
                 <div
                   class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
                 >
-                  <img src="./img/af_dash_call.png" alt="" class="w-full h-auto" />
+                  <img
+                    src="./img/af_dash_call.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
@@ -611,7 +619,11 @@
                 <div
                   class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
                 >
-                  <img src="./img/be_dash_camera.png" alt="" class="w-full h-auto" />
+                  <img
+                    src="./img/be_dash_camera.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
                 </div>
               </div>
               <!-- after -->
@@ -629,13 +641,77 @@
                 <div
                   class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
                 >
-                  <img src="./img/af_dash_camera.png" alt="" class="w-full h-auto" />
+                  <img
+                    src="./img/af_dash_camera.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </main>
+    </div>
+    <!-- animation -->
+    <div class="w-full h-auto px-[4%] flex flex-col items-center">
+      <div
+        class="flex flex-col space-y-4 h-auto w-[40%] leading-6 tracking-wide pb-40"
+      >
+        <p class="font-subt text-sm text-base-fontdark">Aniamtion</p>
+        <p class="text-white">
+          細部にまでこだわったマイクロアニメーションに工夫を凝らし、ユーザーにスムーズで直感的な操作感を提供することを目指しています。
+        </p>
+      </div>
+      <!-- 1&2 -->
+      <div class="flex justify-between w-full h-screen pb-6">
+        <div
+          class="rounded-2xl px-8 py-8 justify-center bg-base-bgme h-full w-[49%] flex items-center"
+        >
+          <video class="max-h-full w-auto" loop muted autoplay>
+            <source src="./video/calling.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div
+          class="rounded-2xl px-8 py-8 justify-center flex items-center bg-base-bgme h-full w-[49%]"
+        >
+          <video class="max-h-full w-auto" loop muted autoplay>
+            <source src="./video/buypoints.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <!-- 3&4 -->
+      <div class="flex justify-between w-full h-screen">
+        <div
+          class="rounded-2xl px-8 py-8 justify-center bg-base-bgme h-full w-[49%] flex items-center"
+        >
+          <video class="max-h-full w-auto" loop muted autoplay>
+            <source src="./video/cameraset.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div
+          class="rounded-2xl px-8 py-8 justify-center flex items-center bg-base-bgme h-full w-[49%]"
+        >
+          <video class="max-h-full w-auto" loop muted autoplay>
+            <source src="./video/serviceset.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- mock -->
+    <div class="w-full h-screen mt-8 px-[4%]">
+      <div
+        class="w-full h-full bg-base-bgme rounded-2xl flex justify-center items-center"
+      >
+        <img
+          src="./img/partsdark.png"
+          alt=""
+          class="w-[70%] h-auto rounded-2xl"
+        />
+      </div>
     </div>
   </body>
 
