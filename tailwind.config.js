@@ -17,6 +17,8 @@ module.exports = {
         'smmockup': "url('./img/sm.png')",
         'sm3mockup': "url('./img/sm3.png')",
         'parts': "url('./img/parts.png')",
+        'portwb': "url('./img/indexwb.png')",
+        'portcl': "url('./img/indexcl.png')",
       },
       backgroundSize: {
         '80%': '80%',

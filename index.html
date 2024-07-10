@@ -11,11 +11,11 @@
     <!-- hero -->
     <section class="h-screen w-screen flex flex-col bg-base-bgme">
       <div
-        class="max-w-screen-2xl h-full bg-sun bg-contain bg-top bg-no-repeat"
+        class="max-w-screen-2xl h-full bg-sun bg-contain bg-top bg-no-repeat bg-fixed"
       ></div>
-<!-- footbar -->
+      <!-- footbar -->
       <div
-        class="w-[92%] z-50 fixed h-[8%]  left-1/2 transform -translate-x-1/2 bottom-8 flex justify-between px-4 items-center text-[14px] bg-base-bgdark rounded-2xl"
+        class="w-[92%] z-50 fixed h-[8%] left-1/2 transform -translate-x-1/2 bottom-8 flex justify-between px-4 items-center text-[14px] bg-base-bgdark rounded-2xl"
       >
         <!-- contact -->
         <div class="flex space-x-6 w-[20%]">
@@ -27,7 +27,7 @@
         </p>
         <!-- resume -->
         <div class="w-[20%] h-auto flex justify-end">
-          <a
+          <a onclick="openPDF()"
             href=""
             class="bg-primary-500 flex justify-center items-center rounded-xl px-6 py-2 text-white hover:bg-primary-300"
           >
@@ -36,71 +36,142 @@
         </div>
       </div>
     </section>
-    <!-- work -->
+    <!-- bg -->
 
-    <section
-      class="w-screen h-screen bg-base-bgme font-serif "
-    >
     <div
-        class="w-auto h-full bg-sunturn  bg-cover bg-center flex pt-[4%] px-[4%]"
+    id="content-container"
+      class="w-screen h-screen font-serif bg-sunturn bg-cover bg-center bg-fixed overflow-scroll "
+    >
+      <section
+        
+        class="w-full h-auto px-[4%] flex flex-col pt-[2%] bg-opacity-100 space-y-40 pb-40 "
       >
-    <!-- p1 -->
-    <div class="w-full h-[80%] rounded-2xl  flex justify-between items-center bg-base-bgme/90">
-      <button
-        onclick="redirecttoPj1()"
-        class="w-1/2 h-full rounded-2xl bg-base-bglight group"
-      >
+        <!-- p1 -->
         <div
-          class="bg-heromockup w-full h-full bg-top bg-cover group-hover:transform group-hover:scale-105 group-hover:-translate-y-6 group-hover:duration-100"
-        ></div>
-      </button>
-      <!-- title -->
-      <div class="flex flex-col justify-between h-[80%] w-1/2 pl-8">
-        <div class="flex flex-col space-y-2">
-          <p class="text-base-fontdark">selected work</p>
-          <p class="text-base-fontlight text-2xl">
-            Redesigning a Telecommunication Service Platform
-          </p>
-        </div>
-        <!-- btn -->
-        <button
-          onclick="redirecttoPj1()"
-          class="w-14 h-14 flex justify-center items-center bg-primary-700 rounded-full hover:bg-primary-700/50"
+          class="w-full h-[80vh] rounded-2xl flex justify-between items-center bg-base-bgme/90"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="16"
-            fill="none"
-            viewBox="0 0 12 10"
+          <button
+            onclick="redirecttoPj1()"
+            class="w-1/2 h-full rounded-2xl bg-base-bglight"
           >
-            <path
-              stroke="#D8D8D8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
-            />
-          </svg>
-        </button>
-      </div>
+            <div
+              class="bg-portwb w-full h-full  bg-contain bg-center bg-no-repeat hover:bg-portcl hover:duration-500 hover:ease-in-out"
+            ></div>
+          </button>
+          <!-- title -->
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider items-end">
+            <div class="flex flex-col space-y-2 w-full">
+              <p class="text-base-fontdark">selected work</p>
+              <p class="text-white text-2xl ">
+                Redesigning a Telecommunication Service Platform
+              </p>
+            </div>
+            <!-- btn -->
+            <button
+              onclick="redirecttoPj1()"
+              class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="16"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="#D8D8D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- p2 -->
+        <div
+          class="w-full h-[80vh] rounded-2xl flex justify-between items-center bg-base-bgme/90"
+        >
+          <button
+            onclick="redirecttoPj1()"
+            class="w-1/2 h-full rounded-2xl bg-base-bglight"
+          >
+            <div
+              class=" w-full h-full "
+            ></div>
+          </button>
+          <!-- title -->
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider items-end">
+            <div class="flex flex-col space-y-2 w-full">
+              <p class="text-base-fontdark">conceptual design</p>
+              <p class="text-white text-2xl ">
+                Pieces of past work from my study time
+              </p>
+            </div>
+            <!-- btn -->
+            <button
+              onclick="redirecttoPj1()"
+              class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="16"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="#D8D8D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
-    </div>
-     
-    </section>
-     
-   
   </body>
   <script>
-    function redirecttoResume() {
-      window.location.href = "./resume.html";
-    }
+function openPDF() {
+            const pdfUrl = './resume.pdf'; // 替换为你的 PDF 文件路径
+            window.open(pdfUrl, '_blank');
+        }
+
+    
     function redirecttoPj2() {
       window.location.href = "./pj-2.html";
     }
 
     function redirecttoPj1() {
-      window.location.href = "./pj-1.html";
+            window.open('./pj-1.html', '_blank'); // 在新窗口中打开 pj-1.html
+        }
+
+    const contentContainer = document.getElementById('content-container');
+const bgSunturn = document.querySelector('.bg-sunturn');
+let allowScroll = false;
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset >= bgSunturn.offsetHeight) {
+    allowScroll = true;
+    contentContainer.classList.add('overflow-auto');
+  } else {
+    allowScroll = false;
+    contentContainer.classList.remove('overflow-auto');
+  }
+});
+
+contentContainer.addEventListener('scroll', function(event) {
+  if (!allowScroll) {
+    // 当 contentContainer 滚动到顶部之前，禁止其滚动
+    if (contentContainer.scrollTop > 0) {
+      event.preventDefault();
+      contentContainer.scrollTop = 0;
     }
+  }
+});
   </script>
 </html>
