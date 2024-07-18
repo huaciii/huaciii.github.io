@@ -19,6 +19,13 @@ module.exports = {
         'parts': "url('./img/parts.png')",
         'portwb': "url('./img/indexwb.png')",
         'portcl': "url('./img/indexcl.png')",
+        'pj2': "url('./img/index2.png')",
+        'pj2wb': "url('./img/index2wb.png')",
+        'bkmapgif': "url('./img/map.gif')",
+        'bkmap': "url('./img/bakery_map.png')",
+        'shopstep': "url('./img/shopping steps.png')",
+        'bkcart1': "url('./img/add to cart.gif')",
+        'bkcart2': "url('./img/add to cart2.gif')",
       },
       backgroundSize: {
         '80%': '80%',

@@ -94,11 +94,11 @@
           class="w-full h-[80vh] rounded-2xl flex justify-between items-center bg-base-bgme/90"
         >
           <button
-            onclick="redirecttoPj1()"
-            class="w-1/2 h-full rounded-2xl bg-base-bglight"
+            onclick="redirecttoPj2()"
+            class="w-1/2 h-full  "
           >
             <div
-              class=" w-full h-full "
+              class=" w-full h-full bg-pj2wb bg-cover bg-center rounded-2xl hover:bg-pj2 hover:duration-300 hover:ease-in"
             ></div>
           </button>
           <!-- title -->
@@ -111,7 +111,7 @@
             </div>
             <!-- btn -->
             <button
-              onclick="redirecttoPj1()"
+              onclick="redirecttoPj2()"
               class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
             >
               <svg
@@ -137,14 +137,14 @@
   </body>
   <script>
 function openPDF() {
-            const pdfUrl = './resume.pdf'; // 替换为你的 PDF 文件路径
+            const pdfUrl = './resumeJP&EN.pdf'; // 替换为你的 PDF 文件路径
             window.open(pdfUrl, '_blank');
         }
 
     
-    function redirecttoPj2() {
-      window.location.href = "./pj-2.html";
-    }
+        function redirecttoPj2() {
+            window.open('./pj-2.html', '_blank'); // 在新窗口中打开 pj-2.html
+        }
 
     function redirecttoPj1() {
             window.open('./pj-1.html', '_blank'); // 在新窗口中打开 pj-1.html
