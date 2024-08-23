@@ -34,7 +34,7 @@ module.exports = {
         'base': {
           DEFAULT: '#222222',
           fontdark: '#737272',
-          fontlight: '#BCBCBC',
+          fontlight: '#E1E1E1',
           bglight: '#cacaca',
           bgme: '#202020',
           bgdark: '#171717',
