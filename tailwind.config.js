@@ -26,6 +26,10 @@ module.exports = {
         'shopstep': "url('./img/shopping steps.png')",
         'bkcart1': "url('./img/add to cart.gif')",
         'bkcart2': "url('./img/add to cart2.gif')",
+        'old_signflow': "url('./img/signupflow.png')",
+        'am_before': "url('./img/am_before.png')",
+        'am_after': "url('./img/am_after.png')",
+        'ba_hp': "url('./img/ba_hp.png')",
       },
       backgroundSize: {
         '80%': '80%',
