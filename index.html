@@ -40,7 +40,7 @@
 
     <div
     id="content-container"
-      class="w-screen h-screen font-serif bg-sunturn bg-cover bg-center bg-fixed overflow-scroll "
+      class="w-screen h-screen bg-sunturn bg-cover bg-center bg-fixed overflow-scroll "
     >
       <section
         
@@ -48,23 +48,24 @@
       >
         <!-- p1 -->
         <div
-          class="w-full h-[80vh] rounded-2xl flex justify-between items-center bg-base-bgme/90"
+          class="w-full h-[80vh] flex justify-center items-center "
         >
+        <div class="rounded-2xl flex justify-between items-center bg-base-bgme w-[60%] h-[60%]">
           <button
             onclick="redirecttoPj1()"
             class="w-1/2 h-full rounded-2xl bg-base-bglight"
           >
             <div
-              class="bg-portwb w-full h-full  bg-contain bg-center bg-no-repeat hover:bg-portcl hover:duration-500 hover:ease-in-out"
+              class="w-full h-full  bg-contain bg-center bg-no-repeat bg-portcl"
             ></div>
           </button>
           <!-- title -->
-          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider items-end">
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider">
             <div class="flex flex-col space-y-2 w-full">
-              <p class="text-base-fontdark">selected work</p>
-              <p class="text-white text-2xl ">
-                Redesigning a Telecommunication Service Platform
-              </p>
+              <div class="px-4 py-1 border border-base-brd rounded-full bg-base-bgdark w-fit text-white text-xs">BtoC,web </div>
+              <div class="text-white text-2xl ">
+                 Redesigning a Telecommunication Service Platform
+              </div>
             </div>
             <!-- btn -->
             <button
@@ -87,31 +88,32 @@
                 />
               </svg>
             </button>
-          </div>
+          </div></div>
         </div>
         <!-- p2 -->
         <div
-          class="w-full h-[80vh] rounded-2xl flex justify-between items-center bg-base-bgme/90"
+          class="w-full h-[80vh] flex justify-center items-center "
         >
+        <div class="rounded-2xl flex justify-between items-center bg-base-bgme w-[60%] h-[60%]">
           <button
-            onclick="redirecttoPj2()"
-            class="w-1/2 h-full  "
+            onclick="redirecttoPj()"
+            class="w-1/2 h-full rounded-2xl bg-base-bglight"
           >
-            <div
-              class=" w-full h-full bg-pj2wb bg-cover bg-center rounded-2xl hover:bg-pj2 hover:duration-300 hover:ease-in"
-            ></div>
+          <div
+          class=" w-full h-full bg-cover bg-center rounded-2xl bg-pom "
+        ></div>
           </button>
           <!-- title -->
-          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider items-end">
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider">
             <div class="flex flex-col space-y-2 w-full">
-              <p class="text-base-fontdark">conceptual design</p>
-              <p class="text-white text-2xl ">
-                Pieces of past work from my study time
-              </p>
+              <div class="px-4 py-1 border border-base-brd rounded-full bg-base-bgdark w-fit text-white text-xs">Dashboard,web,app </div>
+              <div class="text-white text-2xl ">
+                Building Site Monitoring System: From Requirements to Complete UI Design
+              </div>
             </div>
             <!-- btn -->
             <button
-              onclick="redirecttoPj2()"
+              onclick="redirecttoPj()"
               class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
             >
               <svg
@@ -131,7 +133,51 @@
               </svg>
             </button>
           </div>
-        </div>
+        </div></div>
+        <!-- p3 -->
+        <div
+          class="w-full h-[80vh] flex justify-center items-center "
+        >
+        <div class="rounded-2xl flex justify-between items-center bg-base-bgme w-[60%] h-[60%]">
+          <button
+            onclick="redirecttoPj3()"
+            class="w-1/2 h-full  "
+          >
+            <div
+              class=" w-full h-full bg-cover bg-center rounded-2xl bg-pj2 "
+            ></div>
+          </button>
+          <!-- title -->
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider">
+            <div class="flex flex-col space-y-2 w-full">
+              <div class="px-4 py-1 border border-base-brd rounded-full bg-base-bgdark w-fit text-white text-xs">app,web </div>
+              <p class="text-white text-2xl ">
+                Pieces of past work from my study time
+              </p>
+            </div>
+            <!-- btn -->
+            <button
+              onclick="redirecttoPj3()"
+              class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="16"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="#D8D8D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div></div>
       </section>
     </div>
   </body>
@@ -142,12 +188,15 @@ function openPDF() {
         }
 
     
-        function redirecttoPj2() {
-            window.open('./pj-2.html', '_blank'); // 在新窗口中打开 pj-2.html
+        function redirecttoPj3() {
+            window.open('./pj-3.html', '_blank'); // 在新窗口中打开 pj-2.html
         }
 
     function redirecttoPj1() {
             window.open('./pj-1.html', '_blank'); // 在新窗口中打开 pj-1.html
+        }
+        function redirecttoPj2() {
+            window.open('./pj-2.html', '_blank'); // 在新窗口中打开 pj-1.html
         }
 
     const contentContainer = document.getElementById('content-container');

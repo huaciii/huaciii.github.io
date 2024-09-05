@@ -30,6 +30,7 @@ module.exports = {
         'am_before': "url('./img/am_before.png')",
         'am_after': "url('./img/am_after.png')",
         'ba_hp': "url('./img/ba_hp.png')",
+        'pom': "url('./img/pj3.png')",
       },
       backgroundSize: {
         '80%': '80%',
