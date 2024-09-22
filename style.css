@@ -716,8 +716,16 @@ video {
   width: 33%;
 }
 
+.w-\[38\%\]{
+  width: 38%;
+}
+
 .w-\[40\%\]{
   width: 40%;
+}
+
+.w-\[45\%\]{
+  width: 45%;
 }
 
 .w-\[48\%\]{
@@ -746,6 +754,10 @@ video {
 
 .w-\[70\%\]{
   width: 70%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .w-\[90\%\]{
@@ -936,6 +948,10 @@ video {
   border-width: 1px;
 }
 
+.border-b-\[1px\]{
+  border-bottom-width: 1px;
+}
+
 .border-t-\[1px\]{
   border-top-width: 1px;
 }
@@ -953,6 +969,11 @@ video {
 .border-primary-300{
   --tw-border-opacity: 1;
   border-color: rgb(242 48 48 / var(--tw-border-opacity));
+}
+
+.border-\[\#fdc80e\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(253 200 14 / var(--tw-border-opacity));
 }
 
 .bg-base-bgdark{
@@ -1016,8 +1037,12 @@ video {
   background-image: url('./img/pfhero_t.png');
 }
 
-.bg-pom{
-  background-image: url('./img/pj3.png');
+.bg-wahero{
+  background-image: url('./img/wahero.png');
+}
+
+.bg-wamo{
+  background-image: url('./img/waseda-mockup.png');
 }
 
 .bg-contain{
@@ -1044,8 +1069,16 @@ video {
   background-repeat: no-repeat;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.p-40{
+  padding: 10rem;
 }
 
 .px-4{
@@ -1138,6 +1171,10 @@ video {
   padding-bottom: 16rem;
 }
 
+.pb-\[8\%\]{
+  padding-bottom: 8%;
+}
+
 .pl-24{
   padding-left: 6rem;
 }
@@ -1152,6 +1189,14 @@ video {
 
 .pl-\[44px\]{
   padding-left: 44px;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pt-40{
@@ -1212,6 +1257,10 @@ video {
   line-height: 1rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -1226,6 +1275,14 @@ video {
 
 .leading-6{
   line-height: 1.5rem;
+}
+
+.leading-loose{
+  line-height: 2;
+}
+
+.tracking-normal{
+  letter-spacing: 0em;
 }
 
 .tracking-wide{
@@ -1246,6 +1303,11 @@ video {
   color: rgb(225 225 225 / var(--tw-text-opacity));
 }
 
+.text-pj2-500{
+  --tw-text-opacity: 1;
+  color: rgb(202 0 124 / var(--tw-text-opacity));
+}
+
 .text-primary-300{
   --tw-text-opacity: 1;
   color: rgb(242 48 48 / var(--tw-text-opacity));
@@ -1254,6 +1316,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#fdc80e\]{
+  --tw-text-opacity: 1;
+  color: rgb(253 200 14 / var(--tw-text-opacity));
 }
 
 .hover\:bg-primary-300:hover{

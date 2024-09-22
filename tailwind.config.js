@@ -31,6 +31,8 @@ module.exports = {
         'am_after': "url('./img/am_after.png')",
         'ba_hp': "url('./img/ba_hp.png')",
         'pom': "url('./img/pj3.png')",
+        'wamo': "url('./img/waseda-mockup.png')",
+        'wahero': "url('./img/wahero.png')",
       },
       backgroundSize: {
         '80%': '80%',
@@ -52,7 +54,10 @@ module.exports = {
           'text': '#897373',
           500: '#A61717',
           800: '#210000',
-         
+        },
+        'pj2': {
+           
+            500: '#CA007C',  
         },
         
       },
