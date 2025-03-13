@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shu-s</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <style>
+      body > *:not(.loading-screen) {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 1s ease-in-out;
+      }
+      .loading-screen.fade-out {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.8s ease-in-out;
+      }
+      .loading-screen img {
+        max-width: 400px;
+        height: auto;
+      }
+      body.content-visible > *:not(.loading-screen) {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <img src="./img/loading.gif" alt="Loading..." />
+    </div>
+    <!-- hero -->
+    <section class="h-screen w-screen flex flex-col bg-base-bgme">
+      <div
+        class="w-screen h-full bg-sun bg-contain bg-top bg-no-repeat bg-fixed"
+      ></div>
+      <!-- footbar -->
+      <div
+        class="w-[92%] z-50 fixed h-[8%] left-1/2 transform -translate-x-1/2 bottom-8 flex justify-between px-4 items-center text-[14px] bg-base-bgdark rounded-2xl"
+      >
+        <!-- contact -->
+        <div class="flex space-x-6 w-[20%]">
+          <p class="text-base-fontdark">CONTACT</p>
+          <p class="text-base-fontlight">huaciii.a@gmail.com</p> 
+        </div>
+        <p class="text-base-fontlight text-center w-[40%]">
+          Be firm, and just, and true © Asrun Shu 2024 
+        </p>
+        <!-- resume -->
+        <div class="w-[20%] h-auto flex justify-end">
+          <a onclick="openPDF()"
+            href=""
+            class="bg-primary-500 flex justify-center items-center rounded-xl px-6 py-2 text-white hover:bg-primary-300"
+          >
+            RESUME
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- bg -->
+
+    <div
+    id="content-container"
+      class="w-screen h-screen bg-sunturn bg-cover bg-center bg-fixed overflow-scroll "
+    >
+      <section
+        
+        class="w-full h-auto px-[4%] flex flex-col pt-[2%] bg-opacity-100 space-y-40 pb-40 "
+      >
+        <!-- p1 -->
+        <div
+          class="w-full h-[80vh] flex justify-center items-center "
+        >
+        <div class="rounded-2xl flex justify-between items-center bg-base-bgme w-[60%] h-[60%]">
+          <button
+            onclick="redirecttoPj1()"
+            class="w-1/2 h-full rounded-2xl bg-base-bglight"
+          >
+            <div
+              class="w-full h-full  bg-contain bg-center bg-no-repeat bg-portcl"
+            ></div>
+          </button>
+          <!-- title -->
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider">
+            <div class="flex flex-col space-y-2 w-full">
+              <div class="px-4 py-1 border border-base-brd rounded-full bg-base-bgdark w-fit text-white text-xs">BtoC,web </div>
+              <div class="text-white text-2xl ">
+                 Redesigning a Telecommunication Service Platform From Strategy Layer
+              </div>
+            </div>
+            <!-- btn -->
+            <button
+              onclick="redirecttoPj1()"
+              class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="16"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="#D8D8D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
+                />
+              </svg>
+            </button>
+          </div></div>
+        </div>
+        <!-- p2 -->
+        <div
+          class="w-full h-[80vh] flex justify-center items-center "
+        >
+        <div class="rounded-2xl flex justify-between items-center bg-base-bgme w-[60%] h-[60%]">
+          <button
+            onclick="redirecttoPj2()"
+            class="w-1/2 h-full rounded-2xl bg-base-bglight"
+          >
+          <div
+          class=" w-full h-full bg-cover bg-center rounded-2xl bg-wamo "
+        ></div>
+          </button>
+          <!-- title -->
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider">
+            <div class="flex flex-col space-y-2 w-full">
+              <div class="px-4 py-1 border border-base-brd rounded-full bg-base-bgdark w-fit text-white text-xs">Dashboard,web,app </div>
+              <div class="text-white text-2xl ">
+                Building Site Monitoring System: From Requirements to Complete UI Design
+              </div>
+            </div>
+            <!-- btn -->
+            <button
+              onclick="redirecttoPj2()"
+              class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="16"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="#D8D8D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div></div>
+        <!-- p3 -->
+        <div
+          class="w-full h-[80vh] flex justify-center items-center "
+        >
+        <div class="rounded-2xl flex justify-between items-center bg-base-bgme w-[60%] h-[60%]">
+          <button
+            onclick="redirecttoPj3()"
+            class="w-1/2 h-full  "
+          >
+            <div
+              class=" w-full h-full bg-cover bg-center rounded-2xl bg-pj2 "
+            ></div>
+          </button>
+          <!-- title -->
+          <div class="flex flex-col justify-between h-full p-4 pl-8 w-1/2  tracking-wider">
+            <div class="flex flex-col space-y-2 w-full">
+              <div class="px-4 py-1 border border-base-brd rounded-full bg-base-bgdark w-fit text-white text-xs">app,web </div>
+              <p class="text-white text-2xl ">
+                Pieces of past work from my study time
+              </p>
+            </div>
+            <!-- btn -->
+            <button
+              onclick="redirecttoPj3()"
+              class="w-14 h-14 bg-base-bgdark flex justify-center items-center rounded-2xl hover:bg-primary-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="16"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="#D8D8D8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M1.333 5h9.334m0 0-3.5-3.5m3.5 3.5-3.5 3.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div></div>
+      </section>
+    </div>
+  </body>
+  <script>
+    // GIF 动画的持续时间（毫秒）
+    const GIF_DURATION = 3000; // 根据你的 GIF 实际时长调整
+    const FADE_OUT_DURATION = 800; // 淡出动画持续时间（与 CSS 中的 transition 对应）
+
+    window.addEventListener('load', function() {
+      const loadingScreen = document.querySelector('.loading-screen');
+      
+      // 等待 GIF 播放完成
+      setTimeout(() => {
+        // 开始淡出动画
+        loadingScreen.classList.add('fade-out');
+        
+        // 等待淡出动画即将完成时开始显示内容
+        setTimeout(() => {
+          document.body.classList.add('content-visible');
+          // 完全移除加载屏幕
+          setTimeout(() => {
+            loadingScreen.remove();
+          }, 500);
+        }, FADE_OUT_DURATION - 200); // 提前200ms开始显示内容，使过渡更流畅
+      }, GIF_DURATION);
+    });
+
+    function openPDF() {
+            const pdfUrl = './resumejp2025.pdf'; // 替换为你的 PDF 文件路径
+            window.open(pdfUrl, '_blank');
+        }
+
+    
+        function redirecttoPj3() {
+            window.open('./pj-3.html', '_blank'); // 在新窗口中打开 pj-2.html
+        }
+
+    function redirecttoPj1() {
+            window.open('./pj-1.html', '_blank'); // 在新窗口中打开 pj-1.html
+        }
+        function redirecttoPj2() {
+            window.open('./pj-2.html', '_blank'); // 在新窗口中打开 pj-1.html
+        }
+
+    const contentContainer = document.getElementById('content-container');
+const bgSunturn = document.querySelector('.bg-sunturn');
+let allowScroll = false;
+
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset >= bgSunturn.offsetHeight) {
+    allowScroll = true;
+    contentContainer.classList.add('overflow-auto');
+  } else {
+    allowScroll = false;
+    contentContainer.classList.remove('overflow-auto');
+  }
+});
+
+contentContainer.addEventListener('scroll', function(event) {
+  if (!allowScroll) {
+    // 当 contentContainer 滚动到顶部之前，禁止其滚动
+    if (contentContainer.scrollTop > 0) {
+      event.preventDefault();
+      contentContainer.scrollTop = 0;
+    }
+  }
+});
+  </script>
+</html>

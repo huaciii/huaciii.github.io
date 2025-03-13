@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html','./pj-1.html','./pj-2.html'],
+  content: ['./index.html','./pj-1.html','./pj-2.html','./pj-1-2.html', './pj-1 copy.html'],
   theme: {
     extend: {
+      
       backgroundImage: {
         'star-bk': "url('./img/star_bk.png')",
         'star-wh': "url('./img/star_wh.png')",
@@ -33,42 +34,45 @@ module.exports = {
         'pom': "url('./img/pj3.png')",
         'wamo': "url('./img/waseda-mockup.png')",
         'wahero': "url('./img/wahero.png')",
+        'iconB': "url('./img/icon_B.png')",
+        'iconC': "url('./img/icon_C.png')",
+        'hp_before': "url('./img/mock_before.png')",
+        'hp_after': "url('./img/mock_after.png')",
+        'hp_before2': "url('./img/mock_before2.png')",
+        'hp_after2': "url('./img/mock_after2.png')",
+        'set_after': "url('./img/af_dash_home.png')",
+        'set_before': "url('./img/be_dash_home.png')",
+        'camera_set_before': "url('./img/be_dash_camera.png')",
+        'camera_set_after': "url('./img/af_dash_camera.png')",
+        'log_after': "url('./img/am_after.png')",
+        'log_before': "url('./img/am_before.png')",
       },
       backgroundSize: {
         '80%': '80%',
       },
       colors: {
-        'base': {
-          DEFAULT: '#222222',
-          fontdark: '#737272',
-          fontlight: '#E1E1E1',
-          bglight: '#cacaca',
-          bgme: '#202020',
-          bgdark: '#171717',
-          btn: '#5C5C5C',
-          brd: '#2b2b2b',
-        },
         'primary': {
-          100: '#F29494',
-          300: '#F23030',
-          'text': '#897373',
-          500: '#A61717',
-          800: '#210000',
+          300: '#f23030',
+          500: '#a61717',
         },
         'pj2': {
-           
-            500: '#CA007C',  
+          500: '#ca007c',
         },
-        
+        'base': {
+          'bgdark': '#171717',
+          'bglight': '#cacaca',
+          'bgme': '#202020',
+          'brd': '#2b2b2b',
+          'btn': '#5c5c5c',
+          'fontdark': '#737272',
+          'fontlight': '#e1e1e1',
+        },
       },
       fontFamily: {
-         'subt': ['Pixelify Sans'],
-       },
+        'subt': ['Pixelify Sans'],
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-animated'),
-    
-  ],
+  plugins: [],
 }
 

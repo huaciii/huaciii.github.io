@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shu/port</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./loading.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <!-- React 依赖 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body class="bg-base-bgdark w-screen h-auto">
+    <header
+      class="w-screen px-[4%] py-8 h-auto flex justify-start items-center"
+    >
+      <button onclick="backtoHome()" class="w-auto h-auto">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="28"
+          fill="none"
+          viewBox="0 0 34 28"
+        >
+          <path
+            fill="#D8D8D8"
+            d="M29.405 0a14.588 14.588 0 0 1 1.964 7.334c0 8.074-6.523 14.619-14.569 14.619-8.047 0-14.57-6.545-14.57-14.619 0-2.673.716-5.178 1.965-7.334A16.825 16.825 0 0 0 0 11.144C0 20.454 7.522 28 16.8 28s16.8-7.547 16.8-16.856A16.82 16.82 0 0 0 29.405 0Z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <section
+      class="w-full px-[4%] flex flex-col space-y-10 items-start text-white h-screen"
+    >
+      <!-- heroimg -->
+      <div class="w-full h-[80%]">
+        <div class="bg-macmockup bg-cover w-full h-full rounded-2xl"></div>
+      </div>
+      <div class="px-[8%] w-full">
+        <!-- title -->
+        <h1 class="text-4xl">Redesigning a Telecommunication Service Platform</h1>
+      </div>
+     
+    </section>
+    <!-- portとは -->
+    <section class="h-auto w-full px-[4%]">
+      <div
+        class="pt-40 pb-48 rounded-2xl w-full h-auto mt-10 flex justify-center items-center"
+      >
+        <div
+          class="flex flex-col space-y-4 h-auto w-[40%] leading-6 tracking-wide"
+        >
+          <p class="font-subt text-sm text-[#fdc80e]">Introduction.</p>
+          <p class="text-base-fontlight">
+            Portは、アプリなしでブラウザから簡単にオンライン課金通話するプラットフォームです。<br />
+            カウンセリング、占い、コンサル、
+            外国語会話、暇つぶしの話し相手など、様々な用途に対応しています。
+          </p>
+        </div>
+      </div>
+      <!-- key feature -->
+      <div class="w-full flex justify-between h-auto mt-10 text-sm">
+        <!-- b -->
+        <div
+          class="h-auto w-[48%] -bg-base-bgme border-base-brd border-[1px] rounded-2xl px-8 pt-8 pb-20 flex flex-col space-y-36"
+        >
+          <!-- title -->
+          <div class="flex items-center justify-between w-full space-x-4">
+            <p class="font-subt text-base-fontdark">Key&nbsp; &nbsp;feature</p>
+            <div
+              class="w-auto h-auto px-4 py-1 rounded-3xl bg-primary-700 text-base-fontlight"
+            >
+              Business
+            </div>
+          </div>
+          <div>
+            <ul
+              class="list-disc text-base-fontlight h-auto w-auto space-y-8 pl-4 list-outside tracking-wide"
+            >
+              <li>必要な情報を入力すると、自分のHPを生成することができます</li>
+              <li>
+                リアルタイムの音声およびビデオ通話を行い、複数のサービスを提供することができます
+              </li>
+              <li>自由にサービス料金と受付時間を設定することができます</li>
+              <li>
+                管理画面では、評価やアクセス分析などを確認し、顧客管理をスムーズに行えます
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- c -->
+        <div
+          class="h-auto w-[48%] border-base-brd border-[1px] rounded-2xl px-8 pt-8 pb-20 flex flex-col space-y-36"
+        >
+          <!-- title -->
+          <div class="flex items-center justify-between w-full space-x-4">
+            <p class="font-subt text-base-fontdark">Key&nbsp; &nbsp;feature</p>
+            <div
+              class="w-auto h-auto px-4 py-1 rounded-3xl bg-primary-700 text-base-fontlight"
+            >
+              Custom
+            </div>
+          </div>
+          <div>
+            <ul
+              class="list-disc text-base-fontlight h-auto w-auto space-y-8 pl-4 list-outside tracking-wide"
+            >
+              <li>
+                アプリなしで、ブラウザから簡単に電話をかけることができます
+              </li>
+              <li>
+                プラットフォームを通じてカウンセリング、占い、言語学習などさまざまなサービスを閲覧できます
+              </li>
+              <li>
+                サービス提供者のリアルタイムの状態を確認し、通話中である場合でも予約やメッセージの送信が可能です
+              </li>
+              <li>通話中でもポイントをチャージすることができます</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why&result -->
+    <section class="h-auto w-screen py-80">
+      <div class="flex h-auto flex-col items-center w-full space-y-20">
+        <!-- challenge -->
+        <div class="flex flex-col w-1/2 px-[6%] h-auto space-y-10">
+          <div
+            class="flex flex-col space-y-2 h-auto w-auto leading-6 tracking-wide"
+          >
+            <p class="font-subt text-sm text-[#fdc80e]">challenge.</p>
+            <h1 class="text-3xl text-white">
+              コンバージョン率の向上と収益機会の最大化
+            </h1>
+          </div>
+          <div class="tracking-wide w-full text-base-fontlight">
+            Portプロジェクトの課題は、BユーザーのSNSからPortのホームページへの誘導後のコンバージョン率を向上させることでした。多くの潜在顧客がSNSからPortに訪れましたが、その多くがコンバージョンに至らず、Bユーザーの収益が期待通りに上がらない状況が続いていました。
+
+            <br /><br />私たちの目標は、UIとロジックの再設計を通じてこれらの問題を解決し、Bユーザーの収益機会を最大化することです。
+          </div>
+        </div>
+        <img src="./img/jounery map.png" alt="jounerymap" class="w-1/2">
+        <!-- approach -->
+        <div class="flex flex-col w-1/2 px-[6%] h-auto space-y-10">
+          <div
+            class="flex flex-col space-y-2 h-auto w-auto pt-40 leading-6 tracking-wide"
+          >
+            <p class="font-subt text-sm text-[#fdc80e]">approach.</p>
+            <h1 class="text-3xl text-white">
+              ユーザージャーニーの簡素化と信頼の強化
+            </h1>
+          </div>
+          <div class="tracking-wide w-full text-base-fontlight">
+            コンバージョン率を向上させ、Bユーザーの収益機会を最大化するために、ユーザー体験に焦点を当てた戦略を採用しました。<br /><br />
+            UIの更新において、Portのブランド感を減らし、Bユーザーのホームページのカスタマイズ性を向上させました。これにより、SNSからPortへの移行を自然にし、ブランドの一貫性を保ちました。結果として、ユーザーの信頼が高まり、コンバージョン率の改善が実現しました。
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mock up -->
+    <section class="h-auto w-full mt-8 px-[4%]">
+      <div class="bg-base-bglight rounded-2xl h-screen">
+        <div class="w-full h-full bg-smmockup bg-cover rounded-2xl"></div>
+      </div>
+    </section>
+    <!-- contribution -->
+    <section class="h-auto w-full px-[4%]">
+      <div class="flex w-auto h-auto">
+        <div
+          class="flex flex-col space-y-2 h-auto w-1/2 pt-40 leading-6 tracking-wide"
+        >
+          <p class="font-subt text-sm text-[#fdc80e]">contribution.</p>
+          <h1 class="text-3xl text-white">貢献したこと</h1>
+        </div>
+
+        <div class="flex flex-col w-1/2 h-auto text-white py-48 space-y-28">
+          <!-- contribution1 -->
+          <div class="flex flex-col w-auto h-auto space-y-4">
+            <!-- h -->
+            <div class="flex items-center space-x-4 w-auto h-auto">
+              <svg
+                height="28"
+                viewBox="0 0 176 176"
+                width="28"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <linearGradient
+                  id="linear-gradient"
+                  gradientUnits="userSpaceOnUse"
+                  x1="25.77"
+                  x2="150.23"
+                  y1="25.77"
+                  y2="150.23"
+                >
+                  <stop offset="0" stop-color="#fdc80e" />
+                  <stop offset="1" stop-color="#eb513b" />
+                </linearGradient>
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="_82.correct" data-name="82.correct">
+                    <rect
+                      id="background"
+                      fill="url(#linear-gradient)"
+                      height="176"
+                      rx="88"
+                      width="176"
+                    />
+                    <path
+                      id="icon"
+                      d="m77.29 102.09 8.09-11.84q12.27-18 24.55-35.91c2.43-3.53 5.67-4 9.18-1.64 1.31.89 2.64 1.73 3.93 2.64 3.22 2.28 3.88 5.62 1.65 8.89q-13.11 19.26-26.28 38.49-6.41 9.35-12.74 18.71c-2.48 3.68-5.69 4.39-9.34 1.82q-11.73-8.25-23.33-16.69c-3.47-2.51-3.88-5.75-1.38-9.23 1-1.36 1.93-2.74 2.94-4.08 2.08-2.74 5.21-3.43 8.1-1.53 3.37 2.22 6.61 4.65 9.91 7z"
+                      fill="#fff"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <div class="text-xl font-medium">
+                全サービスのUIをリニューアルしました。
+              </div>
+            </div>
+            <div class="font-light pl-[44px] tracking-wide">
+              簡潔なスタイルを意識し、情報設計やページ更新のしやすさを考慮して、Bento
+              UIのレイアウトにしました。<br />
+              また、各Bユーザーの特性を邪魔しないように、配色はシンプルの低彩度色にしました。
+            </div>
+          </div>
+          <!-- contribution2 -->
+          <div class="flex flex-col w-auto h-auto space-y-4">
+            <!-- h -->
+            <div class="flex items-center space-x-4 w-auto h-auto">
+              <svg
+                height="28"
+                viewBox="0 0 176 176"
+                width="28"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <linearGradient
+                  id="linear-gradient"
+                  gradientUnits="userSpaceOnUse"
+                  x1="25.77"
+                  x2="150.23"
+                  y1="25.77"
+                  y2="150.23"
+                >
+                  <stop offset="0" stop-color="#fdc80e" />
+                  <stop offset="1" stop-color="#eb513b" />
+                </linearGradient>
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="_82.correct" data-name="82.correct">
+                    <rect
+                      id="background"
+                      fill="url(#linear-gradient)"
+                      height="176"
+                      rx="88"
+                      width="176"
+                    />
+                    <path
+                      id="icon"
+                      d="m77.29 102.09 8.09-11.84q12.27-18 24.55-35.91c2.43-3.53 5.67-4 9.18-1.64 1.31.89 2.64 1.73 3.93 2.64 3.22 2.28 3.88 5.62 1.65 8.89q-13.11 19.26-26.28 38.49-6.41 9.35-12.74 18.71c-2.48 3.68-5.69 4.39-9.34 1.82q-11.73-8.25-23.33-16.69c-3.47-2.51-3.88-5.75-1.38-9.23 1-1.36 1.93-2.74 2.94-4.08 2.08-2.74 5.21-3.43 8.1-1.53 3.37 2.22 6.61 4.65 9.91 7z"
+                      fill="#fff"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <div class="text-xl font-medium">
+                情報アーキテクチャを最適化しました。
+              </div>
+            </div>
+            <div class="font-light pl-[44px] tracking-wide">
+              古いバージョンのIA設計は非常にユーザーを混乱させやすかったため、どうすれば情報をより論理的に配置するのかを考えてユーザー体験を向上させました。
+            </div>
+          </div>
+          <!-- contribution3 -->
+          <div class="flex flex-col w-auto h-auto space-y-4">
+            <!-- h -->
+            <div class="flex items-center space-x-4 w-auto h-auto">
+              <svg
+                height="28"
+                viewBox="0 0 176 176"
+                width="28"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <linearGradient
+                  id="linear-gradient"
+                  gradientUnits="userSpaceOnUse"
+                  x1="25.77"
+                  x2="150.23"
+                  y1="25.77"
+                  y2="150.23"
+                >
+                  <stop offset="0" stop-color="#fdc80e" />
+                  <stop offset="1" stop-color="#eb513b" />
+                </linearGradient>
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="_82.correct" data-name="82.correct">
+                    <rect
+                      id="background"
+                      fill="url(#linear-gradient)"
+                      height="176"
+                      rx="88"
+                      width="176"
+                    />
+                    <path
+                      id="icon"
+                      d="m77.29 102.09 8.09-11.84q12.27-18 24.55-35.91c2.43-3.53 5.67-4 9.18-1.64 1.31.89 2.64 1.73 3.93 2.64 3.22 2.28 3.88 5.62 1.65 8.89q-13.11 19.26-26.28 38.49-6.41 9.35-12.74 18.71c-2.48 3.68-5.69 4.39-9.34 1.82q-11.73-8.25-23.33-16.69c-3.47-2.51-3.88-5.75-1.38-9.23 1-1.36 1.93-2.74 2.94-4.08 2.08-2.74 5.21-3.43 8.1-1.53 3.37 2.22 6.61 4.65 9.91 7z"
+                      fill="#fff"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <div class="text-xl font-medium">
+                登録・ログインを簡素化しました。
+              </div>
+            </div>
+            <div class="font-light pl-[44px] tracking-wide">
+              登録フォームを1つのページにまとめると、入力ミスが起こりやすいし、進行状況が不明確になりやすいため、
+              登録フォームをステップごとに分けました。ユーザーの進行状況を明確に示し、適切なフィードバックやエラーメッセージを提供するなどのアプローチをしました。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mock -->
+    <div class="w-full h-screen mt-8 px-[4%]">
+      <div
+        class="w-full h-full bg-base-bgme rounded-2xl flex justify-center items-center"
+      >
+        <img
+          src="./img/partsdark.png"
+          alt=""
+          class="w-[70%] h-auto rounded-2xl"
+        />
+      </div>
+    </div>
+    <!-- solution -->
+    <section class="h-auto w-screen px-[4%] tracking-wide">
+      <!-- solution01 -->
+      <div class="flex h-auto w-full justify-between mt-20">
+        <!-- left_title -->
+        <div
+          class="w-1/3 aspect-square bg-base-bgme  flex rounded-2xl justify-center items-center"
+        >
+          <div
+            class="flex flex-col space-y-2 h-auto w-1/2 leading-6 tracking-wide"
+          >
+            <p class="font-subt text-sm text-[#fdc80e]">solution. 01</p>
+            <h1 class="text-3xl text-base-fontlight">
+              UIリニューアルによるブランドイメージの薄まり
+            </h1>
+          </div>
+        </div>
+        <!-- right_contents -->
+        <div
+          class="h-auto w-[64%] rounded-2xl flex justify-center items-center"
+        >
+          <div class="w-1/2 text-base-fontlight font-light leading-6">
+            ユーザー体験の一貫性のため、簡潔なスタイルを意識しながらデザインを行いました。各Bユーザーの特性を邪魔しないように、配色はシンプルの低彩度色にしました。
+            <br /><br />
+            このデザインでは、視覚的な統一性、レスポンシブデザインの容易さ、そしてページの拡張性に優れたと思います。
+            異なるページ間での一貫性が保たれるため、ユーザーにとって使いやすいインターフェースになります。また、レスポンシブデザインにも適応していて、プロジェクトの成長に合わせてページや機能をスムーズに拡張することも可能です。
+          </div>
+        </div>
+      </div>
+      <!-- gif -->
+      <div class="flex justify-between h-screen items-start w-full mt-8">
+        <div
+          class="bg-base-bgme rounded-2xl w-[33%] h-[70%] flex justify-center items-center relative"
+        >
+          <div class="bg-allsm bg-contain w-[56%] h-[84%] bg-no-repeat"></div>
+          <div
+            class="absolute px-4 py-2 w-auto h-auto bg-base-bgdark rounded-xl right-2 top-2 text-sm text-base-fontdark"
+          >
+            home(sp)
+          </div>
+        </div>
+        <div
+          class="bg-base-bgme rounded-2xl w-[65%] relative h-[70%] flex justify-center items-center"
+        >
+          <div class="bg-allpc bg-contain w-[90%] h-[84%] bg-no-repeat"></div>
+          <div
+            class="absolute px-4 py-2 w-auto h-auto bg-base-bgdark rounded-xl right-2 top-2 text-sm text-base-fontdark"
+          >
+            home(pc)
+          </div>
+        </div>
+      </div>
+      <!-- animation -->
+      <div class="w-full h-auto flex flex-col items-center">
+        <div
+          class="flex flex-col space-y-4 h-auto w-[40%] leading-6 tracking-wide pb-40"
+        >
+          <p class="font-subt text-sm text-[#fdc80e]">Aniamtion.</p>
+          <p class="text-white">
+            細部にまでこだわったマイクロアニメーションに工夫を凝らし、ユーザーにスムーズで直感的な操作感を提供することを目指しています。
+          </p>
+        </div>
+        <!-- 1&2 -->
+        <div class="flex justify-between w-full h-screen pb-6">
+          <div
+            class="rounded-2xl px-8 py-8 justify-center bg-base-bgme h-full w-[49%] flex items-center"
+          >
+            <video class="max-h-full w-auto" loop muted autoplay>
+              <source src="./video/calling.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div
+            class="rounded-2xl px-8 py-8 justify-center flex items-center bg-base-bgme h-full w-[49%]"
+          >
+            <video class="max-h-full w-auto" loop muted autoplay>
+              <source src="./video/buypoints.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <!-- 3&4 -->
+        <div class="flex justify-between w-full h-screen">
+          <div
+            class="rounded-2xl px-8 py-8 justify-center bg-base-bgme h-full w-[49%] flex items-center"
+          >
+            <video class="max-h-full w-auto" loop muted autoplay>
+              <source src="./video/cameraset.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div
+            class="rounded-2xl px-8 py-8 justify-center flex items-center bg-base-bgme h-full w-[49%]"
+          >
+            <video class="max-h-full w-auto" loop muted autoplay>
+              <source src="./video/serviceset.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <!-- solution02 -->
+      <div class="flex h-auto w-full justify-between mt-20">
+        <!-- left_title -->
+        <div
+          class="w-1/3 aspect-square bg-base-bgme flex rounded-2xl justify-center items-center"
+        >
+          <div
+            class="flex flex-col space-y-2 h-auto w-1/2 leading-6 tracking-wide"
+          >
+            <p class="font-subt text-sm text-[#fdc80e]">solution. 02</p>
+            <h1 class="text-3xl text-base-fontlight">情報アーキテクチャの再設計</h1>
+          </div>
+        </div>
+        <!-- right_contents -->
+        <div
+          class="h-auto w-[64%] rounded-2xl flex justify-center items-center"
+        >
+          <div class="w-1/2 text-base-fontlight font-light leading-6"></div>
+        </div>
+      </div>
+      <div class="h-auto w-full mt-8">
+        <div class="bg-yellow-500 rounded-2xl h-screen flex py-8 justify-center ">
+          <img src="./img/iaflow.png" alt="" class="h-full w-auto">
+        </div>
+      </div>
+      
+      <div class="h-auto w-full mt-8">
+        <div class="bg-base-bgme rounded-2xl h-screen flex py-8 justify-center ">
+          <img src="./img/ba_hp.png" alt="" class="h-full w-auto">
+        </div>
+      </div>
+      
+      <!-- 图片对比组件 -->
+      <div class="w-full h-auto px-[4%] py-32">
+        <div id="image-compare-root"></div>
+      </div>
+
+      <script type="text/babel">
+        function ImageCompare() {
+          const [position, setPosition] = React.useState(50);
+          const [isDragging, setIsDragging] = React.useState(false);
+
+          function handleMouseDown() {
+            setIsDragging(true);
+          }
+
+          function handleMouseUp() {
+            setIsDragging(false);
+          }
+
+          function handleMouseMove(e) {
+            if (!isDragging) return;
+            const rect = e.currentTarget.getBoundingClientRect();
+            const newPosition = ((e.clientX - rect.left) / rect.width) * 100;
+            setPosition(Math.min(Math.max(newPosition, 0), 100));
+          }
+
+          React.useEffect(() => {
+            document.addEventListener('mouseup', handleMouseUp);
+            return () => document.removeEventListener('mouseup', handleMouseUp);
+          }, [isDragging]);
+
+          return (
+            <div 
+              style={{ 
+                position: 'relative', 
+                width: '800px', 
+                height: '300px', 
+                margin: '0 auto',
+                overflow: 'hidden'
+              }}
+              onMouseMove={handleMouseMove}
+            >
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: '#22c55e'
+              }} />
+              
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                width: `${position}%`,
+                overflow: 'hidden',
+                backgroundColor: '#ef4444'
+              }} />
+              
+              <div 
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  bottom: 0,
+                  width: '4px',
+                  backgroundColor: 'white',
+                  cursor: 'ew-resize',
+                  left: `${position}%`
+                }}
+                onMouseDown={handleMouseDown}
+              >
+                <div style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '32px',
+                  height: '32px',
+                  backgroundColor: 'white',
+                  borderRadius: '50%',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <svg 
+                    style={{ width: '16px', height: '16px', color: '#4b5563' }}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M8 7h8M8 12h8M8 17h8" 
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          );
+        }
+
+        // 确保在 DOM 加载完成后渲染
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => {
+            ReactDOM.render(<ImageCompare />, document.getElementById('image-compare-root'));
+          });
+        } else {
+          ReactDOM.render(<ImageCompare />, document.getElementById('image-compare-root'));
+        }
+      </script>
+
+      <!-- the new B dashboard -->
+      <div class="grid grid-cols-9 px-[4%] mt-20 pb-64">
+        <aside class="self-start sticky top-16 col-span-2">
+          <div
+            class="w-full h-auto text-justify text-sm leading-6 tracking-wide flex flex-col items-start justify-center space-y-8"
+          >
+            <div class="flex-col">
+              <p class="font-subt text-[#fdc80e]">before & after</p>
+              <p class="text-white font-semibold">
+                Redesign of B-user dashboard
+              </p>
+            </div>
+
+            <p class="text-white">
+              古いバージョンの管理画面には設定分類の混乱や説明文字の冗長さなど多くの問題があり、これらがB端ユーザーに混乱を招いている。
+            </p>
+          </div>
+        </aside>
+        <!-- before&after -->
+        <main class="col-span-7 ml-16">
+          <!-- homepage -->
+          <div class="w-full h-auto flex flex-col space-y-8 pb-48">
+            <!-- title#header -->
+            <div
+              class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+            >
+              #homepage
+            </div>
+            <div class="w-full h-auto flex justify-between">
+              <!-- before -->
+              <div
+                class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-base-fontdark">before</p>
+                  <p class="text-base-fontlight text-sm">
+                    メニューと内容が同じ画面にあるため、スペースの利用効率が非常に低くなっていた。<br />そのため、
+                    「必須項目」をすべて確認するには一番下までスクロールする必要があり、Bユーザーには不便であった。
+                  </p>
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+                >
+                  <img
+                    src="./img/be_dash_home.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <!-- after -->
+              <div
+                class="rounded-2xl px-8 py-6 border-[#fdc80e] border-[1px] flex flex-col h-auto w-[48%] space-y-6"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-[#fdc80e]">after</p>
+                  <p class="text-white text-sm">
+                    新規ユーザーに優しくなるため、メニューの構造をリデザインした。
+                    <br />「未完成」項目は一目瞭然以外、画面の下部に「アプリをダウンロードする」トーストバーを追加した。
+                  </p>
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+                >
+                  <img
+                    src="./img/af_dash_home.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- setting menu -->
+          <div class="w-full h-auto flex flex-col space-y-8 pb-48">
+            <!-- title#header -->
+            <div
+              class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+            >
+              #settings
+            </div>
+            <div class="w-full h-auto flex justify-between">
+              <!-- before -->
+              <div
+                class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-6"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-base-fontdark">before</p>
+                  <p class="text-base-fontlight text-sm">
+                    サイドバーのような仕込みで操作には違和感がある上、全てのコンテンツを見ることができなかった。
+                  </p>
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+                >
+                  <img
+                    src="./img/be_dash_menu.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <!-- after -->
+              <div
+                class="rounded-2xl px-8 py-6 border-[#fdc80e] border-[1px] flex flex-col h-auto w-[48%] space-y-6"
+              >
+                <!-- text -->
+                <div class="flex flex-col w-full text-justify space-y-8">
+                  <p class="font-subt text-[#fdc80e]">after</p>
+                  <p class="text-white text-sm">
+                    構造はページングに替えた。<br />階層的に見やすくなり、ユーザーの操作困難を招くこともなくなる。
+                  </p>
+                </div>
+                <!-- img -->
+                <div
+                  class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+                >
+                  <img
+                    src="./img/af_dash_menu.png"
+                    alt=""
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  detailed settings -->
+          <div class="w-full h-auto flex flex-col space-y-16">
+            <!-- title -->
+            <div
+              class="w-full h-16 mt-16 flex justify-start items-center border-t-[1px] border-base-btn text-base-fontlight"
+            >
+              # detailed settings
+            </div>
+            <div class="w-full h-auto text-white">
+              階層的な設計を意識しながら、視覚化を強化してユーザー体験を向上させた。ここでは一部の例を示す。
+            </div>
+            <!-- 通話料 -->
+            <div class="w-full h-auto flex flex-col space-y-2">
+              <p class="text-base-fontlight">・通話料設定</p>
+              <div class="w-full h-auto flex justify-between">
+                <!-- before -->
+                <div
+                  class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-4"
+                >
+                  <!-- text -->
+                  <div class="flex flex-col w-full text-justify space-y-8">
+                    <p class="font-subt text-base-fontdark">before</p>
+                    <!-- <p class="text-base-fontlight text-sm">
+              サービス提供者の状態がわかりにくい。
+            </p> -->
+                  </div>
+                  <!-- img -->
+                  <div
+                    class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+                  >
+                    <img
+                      src="./img/be_dash_call.png"
+                      alt=""
+                      class="w-full h-auto"
+                    />
+                  </div>
+                </div>
+                <!-- after -->
+                <div
+                  class="rounded-2xl px-8 py-6 border-[#fdc80e] border-[1px] flex flex-col h-auto w-[48%] space-y-4"
+                >
+                  <!-- text -->
+                  <div class="flex flex-col w-full text-justify space-y-8">
+                    <p class="font-subt text-[#fdc80e]">after</p>
+                    <!-- <p class="text-white text-sm">
+              状態タグ欄を追加し、編集がしやすくなるとともに、下部の操作バーとの連携も強化させた。
+            </p> -->
+                  </div>
+                  <!-- img -->
+                  <div
+                    class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+                  >
+                    <img
+                      src="./img/af_dash_call.png"
+                      alt=""
+                      class="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- カメラ -->
+            <div class="w-full h-auto flex flex-col space-y-2">
+              <p class="text-base-fontlight">・カメラ設定</p>
+              <div class="w-full h-auto flex justify-between">
+                <!-- before -->
+                <div
+                  class="rounded-2xl px-8 py-6 border-base-brd border-[1px] flex flex-col h-full w-[48%] space-y-4"
+                >
+                  <!-- text -->
+                  <div class="flex flex-col w-full text-justify space-y-8">
+                    <p class="font-subt text-base-fontdark">before</p>
+                    <!-- <p class="text-base-fontlight text-sm">
+              サービス提供者の状態がわかりにくい。
+            </p> -->
+                  </div>
+                  <!-- img -->
+                  <div
+                    class="w-full h-auto bg-base-bgme flex py-4 justify-center rounded-2xl"
+                  >
+                    <img
+                      src="./img/be_dash_camera.png"
+                      alt=""
+                      class="w-full h-auto"
+                    />
+                  </div>
+                </div>
+                <!-- after -->
+                <div
+                  class="rounded-2xl px-8 py-6 border-[#fdc80e] border-[1px] flex flex-col h-auto w-[48%] space-y-4"
+                >
+                  <!-- text -->
+                  <div class="flex flex-col w-full text-justify space-y-8">
+                    <p class="font-subt text-[#fdc80e]">after</p>
+                    <!-- <p class="text-white text-sm">
+              状態タグ欄を追加し、編集がしやすくなるとともに、下部の操作バーとの連携も強化させた。
+            </p> -->
+                  </div>
+                  <!-- img -->
+                  <div
+                    class="w-full h-auto bg-base-bgme flex justify-center rounded-2xl py-4"
+                  >
+                    <img
+                      src="./img/af_dash_camera.png"
+                      alt=""
+                      class="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- solution03 -->
+      <div class="flex h-auto w-full justify-between mt-20">
+        <!-- left_title -->
+        <div
+          class="w-1/3 aspect-square bg-base-bgme  flex rounded-2xl justify-center items-center"
+        >
+          <div
+            class="flex flex-col space-y-2 h-auto w-1/2 leading-6 tracking-wide"
+          >
+            <p class="font-subt text-sm text-[#fdc80e]">solution. 03</p>
+            <h1 class="text-3xl text-base-fontlight">登録ページとフローへの思考</h1>
+          </div>
+        </div>
+        <!-- right_contents -->
+        <div
+          class="h-auto w-[64%] rounded-2xl flex justify-center items-center"
+        >
+          <div class="w-1/2 text-base-fontlight font-light leading-6">
+            登録ページの最適化において、アテンションヒートマップを用いてユーザーの行動を分析しました。
+            <br /><br />不要な見出しや説明文を削除することで、ユーザーの注意がより集中し、結果として登録率の向上が見られました。視覚的要素を減らすことで認知負荷が軽減され、ユーザーがタスクに集中しやすくなリました。
+            <br /><br />
+            これによって、ユーザーの集中力を高めるとともに、登録の完了率を改善する効果があり、視覚的シンプルさがユーザーエクスペリエンスの向上に直結することが示されました。
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- oldflow -->
+        <div class="h-auto w-full mt-8">
+          <div class="bg-base-bgme rounded-2xl h-screen flex py-8 justify-center ">
+            <img src="./img/signupflow.png" alt="" class="h-full w-auto">
+          </div>
+        </div>
+        <div class="w-2/3 h-full pl-24 pt-40 flex text-base-fontlight">
+しかし、アテンションヒートマップで分析した結果、ユーザーの注意がページ全体に分散しており、特定の要素に集中できていないことが確認されました（左図）。それは、要素が多く、重要な情報よりも存在感が強すぎることが原因と考えられます。
+<br><br>改善案として、タイトルを削除し、補足メッセージの存在感を抑えました。その結果、携帯番号、1000ptブレゼント、CTAボタン、この３つの要素への注意が明らかに強くなりました（右図）。
+ユーザーの認知負荷が軽減され、ユーザーが主要なタスクにより集中できることが確認されました。
+</div>
+        <!-- am_before -->
+        <div class="flex justify-between w-full h-screen py-16">
+          <div
+            class="rounded-2xl px-8 py-32 justify-center bg-base-bgme h-full w-[49%] flex items-center"
+          >
+            <img src="./img/am_before.png" alt="" class="h-full w-auto">
+          </div>
+
+          <div
+            class="rounded-2xl px-8 py-32 justify-center flex items-center bg-base-bgme h-full w-[49%]"
+          >
+          <img src="./img/am_after.png" alt="" class="h-full w-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="./loading.js"></script>
+  <script>
+    function backtoHome() {
+      window.location.href = "./index.html";
+    }
+  </script>
+</html>
